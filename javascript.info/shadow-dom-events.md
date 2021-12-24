@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fshadow-dom-events" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fshadow-dom-events" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/web-components" class="breadcrumbs__link"><span>Web components</span></a></span>
@@ -30,7 +25,7 @@ The idea behind shadow tree is to encapsulate internal implementation details of
 
 Let’s say, a click event happens inside a shadow DOM of `<user-card>` component. But scripts in the main document have no idea about the shadow DOM internals, especially if the component comes from a 3rd-party library.
 
-So, to keep the details encapsulated, the browser *retargets* the event.
+So, to keep the details encapsulated, the browser _retargets_ the event.
 
 **Events that happen in shadow DOM have the host element as the target, when caught outside of the component.**
 
@@ -133,20 +128,20 @@ This is governed by the `composed` event object property. If it’s `true`, then
 
 If you take a look at [UI Events specification](https://www.w3.org/TR/uievents), most events have `composed: true`:
 
--   `blur`, `focus`, `focusin`, `focusout`,
--   `click`, `dblclick`,
--   `mousedown`, `mouseup` `mousemove`, `mouseout`, `mouseover`,
--   `wheel`,
--   `beforeinput`, `input`, `keydown`, `keyup`.
+- `blur`, `focus`, `focusin`, `focusout`,
+- `click`, `dblclick`,
+- `mousedown`, `mouseup` `mousemove`, `mouseout`, `mouseover`,
+- `wheel`,
+- `beforeinput`, `input`, `keydown`, `keyup`.
 
 All touch events and pointer events also have `composed: true`.
 
 There are some events that have `composed: false` though:
 
--   `mouseenter`, `mouseleave` (they do not bubble at all),
--   `load`, `unload`, `abort`, `error`,
--   `select`,
--   `slotchange`.
+- `mouseenter`, `mouseleave` (they do not bubble at all),
+- `load`, `unload`, `abort`, `error`,
+- `select`,
+- `slotchange`.
 
 These events can be caught only on elements within the same DOM, where the event target resides.
 
@@ -195,17 +190,17 @@ Events only cross shadow DOM boundaries if their `composed` flag is set to `true
 
 Built-in events mostly have `composed: true`, as described in the relevant specifications:
 
--   UI Events <https://www.w3.org/TR/uievents>.
--   Touch Events <https://w3c.github.io/touch-events>.
--   Pointer Events <https://www.w3.org/TR/pointerevents>.
--   …And so on.
+- UI Events <https://www.w3.org/TR/uievents>.
+- Touch Events <https://w3c.github.io/touch-events>.
+- Pointer Events <https://www.w3.org/TR/pointerevents>.
+- …And so on.
 
 Some built-in events that have `composed: false`:
 
--   `mouseenter`, `mouseleave` (also do not bubble),
--   `load`, `unload`, `abort`, `error`,
--   `select`,
--   `slotchange`.
+- `mouseenter`, `mouseleave` (also do not bubble),
+- `load`, `unload`, `abort`, `error`,
+- `select`,
+- `slotchange`.
 
 These events can be caught only on elements within the same DOM.
 
@@ -223,24 +218,24 @@ Please note that in case of nested components, one shadow DOM may be nested into
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/web-components" class="sidebar__link">Web components</a>
+- <a href="/web-components" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
--   <a href="#bubbling-event-composedpath" class="sidebar__link">Bubbling, event.composedPath()</a>
--   <a href="#event-composed" class="sidebar__link">event.composed</a>
--   <a href="#custom-events" class="sidebar__link">Custom events</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#bubbling-event-composedpath" class="sidebar__link">Bubbling, event.composedPath()</a>
+- <a href="#event-composed" class="sidebar__link">event.composed</a>
+- <a href="#custom-events" class="sidebar__link">Custom events</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -248,8 +243,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/7-shadow-dom-events" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

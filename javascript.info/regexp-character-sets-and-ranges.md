@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fregexp-character-sets-and-ranges" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fregexp-character-sets-and-ranges" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/regular-expressions" class="breadcrumbs__link"><span>Regular expressions</span></a></span>
@@ -32,7 +27,7 @@ Several characters or character classes inside square brackets `[…]` mean to �
 
 For instance, `[eao]` means any of the 3 characters: `'a'`, `'e'`, or `'o'`.
 
-That’s called a *set*. Sets can be used in a regexp along with regular characters:
+That’s called a _set_. Sets can be used in a regexp along with regular characters:
 
 <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
@@ -54,15 +49,15 @@ So the example below gives no matches:
 
 The pattern searches for:
 
--   `V`,
--   then *one* of the letters `[oi]`,
--   then `la`.
+- `V`,
+- then _one_ of the letters `[oi]`,
+- then `la`.
 
 So there would be a match for `Vola` or `Vila`.
 
 ## <a href="#ranges" id="ranges" class="main__anchor">Ranges</a>
 
-Square brackets may also contain *character ranges*.
+Square brackets may also contain _character ranges_.
 
 For instance, `[a-z]` is a character in range from `a` to `z`, and `[0-5]` is a digit from `0` to `5`.
 
@@ -88,9 +83,9 @@ Combining multiple classes is also possible, e.g. `[\s\d]` means “a space char
 
 For instance:
 
--   **\\d** – is the same as `[0-9]`,
--   **\\w** – is the same as `[a-zA-Z0-9_]`,
--   **\\s** – is the same as `[\t\n\v\f\r ]`, plus few other rare Unicode space characters.
+- **\\d** – is the same as `[0-9]`,
+- **\\w** – is the same as `[a-zA-Z0-9_]`,
+- **\\s** – is the same as `[\t\n\v\f\r ]`, plus few other rare Unicode space characters.
 
 ### <a href="#example-multi-language-w" id="example-multi-language-w" class="main__anchor">Example: multi-language \w</a>
 
@@ -100,11 +95,11 @@ We can write a more universal pattern, that looks for wordly characters in any l
 
 Let’s decipher it. Similar to `\w`, we’re making a set of our own that includes characters with following Unicode properties:
 
--   `Alphabetic` (`Alpha`) – for letters,
--   `Mark` (`M`) – for accents,
--   `Decimal_Number` (`Nd`) – for digits,
--   `Connector_Punctuation` (`Pc`) – for the underscore `'_'` and similar characters,
--   `Join_Control` (`Join_C`) – two special codes `200c` and `200d`, used in ligatures, e.g. in Arabic.
+- `Alphabetic` (`Alpha`) – for letters,
+- `Mark` (`M`) – for accents,
+- `Decimal_Number` (`Nd`) – for digits,
+- `Connector_Punctuation` (`Pc`) – for the underscore `'_'` and similar characters,
+- `Join_Control` (`Join_C`) – two special codes `200c` and `200d`, used in ligatures, e.g. in Arabic.
 
 An example of use:
 
@@ -131,13 +126,13 @@ Or just use ranges of characters in a language that interests us, e.g. `[а-я]`
 
 Besides normal ranges, there are “excluding” ranges that look like `[^…]`.
 
-They are denoted by a caret character `^` at the start and match any character *except the given ones*.
+They are denoted by a caret character `^` at the start and match any character _except the given ones_.
 
 For instance:
 
--   `[^aeyo]` – any character except `'a'`, `'e'`, `'y'` or `'o'`.
--   `[^0-9]` – any character except a digit, the same as `\D`.
--   `[^\s]` – any non-space character, same as `\S`.
+- `[^aeyo]` – any character except `'a'`, `'e'`, `'y'` or `'o'`.
+- `[^0-9]` – any character except a digit, the same as `\D`.
+- `[^\s]` – any non-space character, same as `\S`.
 
 The example below looks for any characters except letters, digits and spaces:
 
@@ -153,10 +148,10 @@ Usually when we want to find exactly a special character, we need to escape it l
 
 In square brackets we can use the vast majority of special characters without escaping:
 
--   Symbols `. + ( )` never need escaping.
--   A hyphen `-` is not escaped in the beginning or the end (where it does not define a range).
--   A caret `^` is only escaped in the beginning (where it means exclusion).
--   The closing square bracket `]` is always escaped (if we need to look for that symbol).
+- Symbols `. + ( )` never need escaping.
+- A hyphen `-` is not escaped in the beginning or the end (where it does not define a range).
+- A caret `^` is only escaped in the beginning (where it means exclusion).
+- The closing square bracket `]` is always escaped (if we need to look for that symbol).
 
 In other words, all special characters are allowed without escaping, except when they mean something for square brackets.
 
@@ -261,21 +256,21 @@ solution
 
 Answers: **no, yes**.
 
--   In the script `Java` it doesn’t match anything, because `[^script]` means “any character except given ones”. So the regexp looks for `"Java"` followed by one such symbol, but there’s a string end, no symbols after it.
+- In the script `Java` it doesn’t match anything, because `[^script]` means “any character except given ones”. So the regexp looks for `"Java"` followed by one such symbol, but there’s a string end, no symbols after it.
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( "Java".match(/Java[^script]/) ); // null
+      alert( "Java".match(/Java[^script]/) ); // null
 
--   Yes, because the `[^script]` part matches the character `"S"`. It’s not one of `script`. As the regexp is case-sensitive (no `i` flag), it treats `"S"` as a different character from `"s"`.
+- Yes, because the `[^script]` part matches the character `"S"`. It’s not one of `script`. As the regexp is case-sensitive (no `i` flag), it treats `"S"` as a different character from `"s"`.
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( "JavaScript".match(/Java[^script]/) ); // "JavaS"
+      alert( "JavaScript".match(/Java[^script]/) ); // "JavaS"
 
 ### <a href="#find-the-time-as-hh-mm-or-hh-mm" id="find-the-time-as-hh-mm-or-hh-mm" class="main__anchor">Find the time as hh:mm or hh-mm</a>
 
@@ -313,26 +308,26 @@ Please note that the dash `'-'` has a special meaning in square brackets, but on
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
+- <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
--   <a href="#sets" class="sidebar__link">Sets</a>
--   <a href="#ranges" class="sidebar__link">Ranges</a>
--   <a href="#excluding-ranges" class="sidebar__link">Excluding ranges</a>
--   <a href="#escaping-in-" class="sidebar__link">Escaping in […]</a>
--   <a href="#ranges-and-flag-u" class="sidebar__link">Ranges and flag “u”</a>
+- <a href="#sets" class="sidebar__link">Sets</a>
+- <a href="#ranges" class="sidebar__link">Ranges</a>
+- <a href="#excluding-ranges" class="sidebar__link">Excluding ranges</a>
+- <a href="#escaping-in-" class="sidebar__link">Escaping in […]</a>
+- <a href="#ranges-and-flag-u" class="sidebar__link">Ranges and flag “u”</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (2)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (2)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -340,8 +335,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/08-regexp-character-sets-and-ranges" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/testing-mocha" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Ftesting-mocha" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Ftesting-mocha" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/js" class="breadcrumbs__link"><span>The JavaScript language</span></a></span>
@@ -77,7 +77,7 @@ That task is just an example: there’s the `**` operator in JavaScript that can
 
 Before creating the code of `pow`, we can imagine what the function should do and describe it.
 
-Such description is called a *specification* or, in short, a spec, and contains descriptions of use cases together with tests for them, like this:
+Such description is called a _specification_ or, in short, a spec, and contains descriptions of use cases together with tests for them, like this:
 
     describe("pow", function() {
 
@@ -93,7 +93,7 @@ A spec has three main building blocks that you can see above:
 What functionality we’re describing. In our case we’re describing the function `pow`. Used to group “workers” – the `it` blocks.
 
 `it("use case description", function() { ... })`  
-In the title of `it` we *in a human-readable way* describe the particular use case, and the second argument is a function that tests it.
+In the title of `it` we _in a human-readable way_ describe the particular use case, and the second argument is a function that tests it.
 
 `assert.equal(value1, value2)`  
 The code inside `it` block, if the implementation is correct, should execute without errors.
@@ -114,7 +114,7 @@ The flow of development usually looks like this:
 6.  Go to 3, update the implementation till tests give no errors.
 7.  Repeat steps 3-6 till the functionality is ready.
 
-So, the development is *iterative*. We write the spec, implement it, make sure tests pass, then write more tests, make sure they work etc. At the end we have both a working implementation and tests for it.
+So, the development is _iterative_. We write the spec, implement it, make sure tests pass, then write more tests, make sure they work etc. At the end we have both a working implementation and tests for it.
 
 Let’s see this development flow in our practical case.
 
@@ -124,9 +124,9 @@ The first step is already complete: we have an initial spec for `pow`. Now, befo
 
 Here in the tutorial we’ll be using the following JavaScript libraries for tests:
 
--   [Mocha](http://mochajs.org/) – the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
--   [Chai](http://chaijs.com) – the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
--   [Sinon](http://sinonjs.org/) – a library to spy over functions, emulate built-in functions and more, we’ll need it much later.
+- [Mocha](http://mochajs.org/) – the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
+- [Chai](http://chaijs.com) – the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
+- [Sinon](http://sinonjs.org/) – a library to spy over functions, emulate built-in functions and more, we’ll need it much later.
 
 These libraries are suitable for both in-browser and server-side testing. Here we’ll consider the browser variant.
 
@@ -322,7 +322,7 @@ In the future we can add more `it` and `describe` on the top level with helper f
 
 <span class="important__type">`before/after` and `beforeEach/afterEach`</span>
 
-We can setup `before/after` functions that execute before/after running tests, and also `beforeEach/afterEach` functions that execute before/after *every* `it`.
+We can setup `before/after` functions that execute before/after running tests, and also `beforeEach/afterEach` functions that execute before/after _every_ `it`.
 
 For instance:
 
@@ -390,12 +390,12 @@ Please note the assertion `assert.isNaN`: it checks for `NaN`.
 
 There are other assertions in [Chai](http://chaijs.com) as well, for instance:
 
--   `assert.equal(value1, value2)` – checks the equality `value1 == value2`.
--   `assert.strictEqual(value1, value2)` – checks the strict equality `value1 === value2`.
--   `assert.notEqual`, `assert.notStrictEqual` – inverse checks to the ones above.
--   `assert.isTrue(value)` – checks that `value === true`
--   `assert.isFalse(value)` – checks that `value === false`
--   …the full list is in the [docs](http://chaijs.com/api/assert/)
+- `assert.equal(value1, value2)` – checks the equality `value1 == value2`.
+- `assert.strictEqual(value1, value2)` – checks the strict equality `value1 === value2`.
+- `assert.notEqual`, `assert.notStrictEqual` – inverse checks to the ones above.
+- `assert.isTrue(value)` – checks that `value === true`
+- `assert.isFalse(value)` – checks that `value === false`
+- …the full list is in the [docs](http://chaijs.com/api/assert/)
 
 So we should add a couple of lines to `pow`:
 
@@ -486,7 +486,7 @@ What we have here is actually 3 tests, but layed out as a single function with 3
 
 Sometimes it’s easier to write this way, but if an error occurs, it’s much less obvious what went wrong.
 
-If an error happens in the middle of a complex execution flow, then we’ll have to figure out the data at that point. We’ll actually have to *debug the test*.
+If an error happens in the middle of a complex execution flow, then we’ll have to figure out the data at that point. We’ll actually have to _debug the test_.
 
 It would be much better to break the test into multiple `it` blocks with clearly written inputs and outputs.
 
@@ -535,32 +535,32 @@ Also we can isolate a single test and run it in standalone mode by writing `it.o
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/code-quality" class="sidebar__link">Code quality</a>
+- <a href="/code-quality" class="sidebar__link">Code quality</a>
 
 #### Lesson navigation
 
--   <a href="#why-do-we-need-tests" class="sidebar__link">Why do we need tests?</a>
--   <a href="#behavior-driven-development-bdd" class="sidebar__link">Behavior Driven Development (BDD)</a>
--   <a href="#development-of-pow-the-spec" class="sidebar__link">Development of “pow”: the spec</a>
--   <a href="#the-development-flow" class="sidebar__link">The development flow</a>
--   <a href="#the-spec-in-action" class="sidebar__link">The spec in action</a>
--   <a href="#initial-implementation" class="sidebar__link">Initial implementation</a>
--   <a href="#improving-the-spec" class="sidebar__link">Improving the spec</a>
--   <a href="#improving-the-implementation" class="sidebar__link">Improving the implementation</a>
--   <a href="#nested-describe" class="sidebar__link">Nested describe</a>
--   <a href="#extending-the-spec" class="sidebar__link">Extending the spec</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#why-do-we-need-tests" class="sidebar__link">Why do we need tests?</a>
+- <a href="#behavior-driven-development-bdd" class="sidebar__link">Behavior Driven Development (BDD)</a>
+- <a href="#development-of-pow-the-spec" class="sidebar__link">Development of “pow”: the spec</a>
+- <a href="#the-development-flow" class="sidebar__link">The development flow</a>
+- <a href="#the-spec-in-action" class="sidebar__link">The spec in action</a>
+- <a href="#initial-implementation" class="sidebar__link">Initial implementation</a>
+- <a href="#improving-the-spec" class="sidebar__link">Improving the spec</a>
+- <a href="#improving-the-implementation" class="sidebar__link">Improving the implementation</a>
+- <a href="#nested-describe" class="sidebar__link">Nested describe</a>
+- <a href="#extending-the-spec" class="sidebar__link">Extending the spec</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (1)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (1)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -568,8 +568,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/03-code-quality/05-testing-mocha" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

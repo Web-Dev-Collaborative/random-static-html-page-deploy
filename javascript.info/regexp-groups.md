@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fregexp-groups" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fregexp-groups" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/regular-expressions" class="breadcrumbs__link"><span>Regular expressions</span></a></span>
@@ -404,8 +399,8 @@ Parentheses groups are numbered left-to-right, and can optionally be named with 
 
 The content, matched by a group, can be obtained in the results:
 
--   The method `str.match` returns capturing groups only without flag `g`.
--   The method `str.matchAll` always returns capturing groups.
+- The method `str.match` returns capturing groups only without flag `g`.
+- The method `str.matchAll` always returns capturing groups.
 
 If the parentheses have no name, then their contents is available in the match array by its number. Named parentheses are also available in the property `groups`.
 
@@ -549,10 +544,10 @@ Let’s add the optional `-` in the beginning:
 
 An arithmetical expression consists of 2 numbers and an operator between them, for instance:
 
--   `1 + 2`
--   `1.2 * 3.4`
--   `-3 / -6`
--   `-2 - 2`
+- `1 + 2`
+- `1.2 * 3.4`
+- `-3 / -6`
+- `-2 - 2`
 
 The operator is one of: `"+"`, `"-"`, `"*"` or `"/"`.
 
@@ -604,12 +599,12 @@ In action:
 
 The result includes:
 
--   `result[0] == "1.2 + 12"` (full match)
--   `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` – the first number, including the decimal part)
--   `result[2] == ".2"` (second group`(\.\d+)?` – the first decimal part)
--   `result[3] == "+"` (third group `([-+*\/])` – the operator)
--   `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` – the second number)
--   `result[5] == undefined` (fifth group `(\.\d+)?` – the last decimal part is absent, so it’s undefined)
+- `result[0] == "1.2 + 12"` (full match)
+- `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` – the first number, including the decimal part)
+- `result[2] == ".2"` (second group`(\.\d+)?` – the first decimal part)
+- `result[3] == "+"` (third group `([-+*\/])` – the operator)
+- `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` – the second number)
+- `result[5] == undefined` (fifth group `(\.\d+)?` – the last decimal part is absent, so it’s undefined)
 
 We only want the numbers and the operator, without the full match or the decimal parts, so let’s “clean” the result a bit.
 
@@ -646,28 +641,28 @@ The final solution:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
+- <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
--   <a href="#examples" class="sidebar__link">Examples</a>
--   <a href="#parentheses-contents-in-the-match" class="sidebar__link">Parentheses contents in the match</a>
--   <a href="#searching-for-all-matches-with-groups-matchall" class="sidebar__link">Searching for all matches with groups: matchAll</a>
--   <a href="#named-groups" class="sidebar__link">Named groups</a>
--   <a href="#capturing-groups-in-replacement" class="sidebar__link">Capturing groups in replacement</a>
--   <a href="#non-capturing-groups-with" class="sidebar__link">Non-capturing groups with ?:</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#examples" class="sidebar__link">Examples</a>
+- <a href="#parentheses-contents-in-the-match" class="sidebar__link">Parentheses contents in the match</a>
+- <a href="#searching-for-all-matches-with-groups-matchall" class="sidebar__link">Searching for all matches with groups: matchAll</a>
+- <a href="#named-groups" class="sidebar__link">Named groups</a>
+- <a href="#capturing-groups-in-replacement" class="sidebar__link">Capturing groups in replacement</a>
+- <a href="#non-capturing-groups-with" class="sidebar__link">Non-capturing groups with ?:</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (4)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (4)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -675,8 +670,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/11-regexp-groups" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

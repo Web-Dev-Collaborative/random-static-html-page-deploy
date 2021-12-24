@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/url" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/url" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/url" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Furl" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Furl" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/network" class="breadcrumbs__link"><span>Network requests</span></a></span>
@@ -50,8 +50,8 @@ The syntax to create a new `URL` object:
 
     new URL(url, [base])
 
--   **`url`** – the full URL or only path (if base is set, see below),
--   **`base`** – an optional base URL: if set and `url` argument has only path, then the URL is generated relative to `base`.
+- **`url`** – the full URL or only path (if base is set, see below),
+- **`base`** – an optional base URL: if set and `url` argument has only path, then the URL is generated relative to `base`.
 
 For example:
 
@@ -96,11 +96,11 @@ Here’s the cheatsheet for URL components:
 
 <figure><img src="/article/url/url-object.svg" width="698" height="246" /></figure>
 
--   `href` is the full url, same as `url.toString()`
--   `protocol` ends with the colon character `:`
--   `search` – a string of parameters, starts with the question mark `?`
--   `hash` starts with the hash character `#`
--   there may be also `user` and `password` properties if HTTP authentication is present: `http://login:password@site.com` (not painted above, rarely used).
+- `href` is the full url, same as `url.toString()`
+- `protocol` ends with the colon character `:`
+- `search` – a string of parameters, starts with the question mark `?`
+- `hash` starts with the hash character `#`
+- there may be also `user` and `password` properties if HTTP authentication is present: `http://login:password@site.com` (not painted above, rarely used).
 
 <span class="important__type">We can pass `URL` objects to networking (and most other) methods instead of a string</span>
 
@@ -122,14 +122,14 @@ So there’s a URL property for that: `url.searchParams`, an object of type [URL
 
 It provides convenient methods for search parameters:
 
--   **`append(name, value)`** – add the parameter by `name`,
--   **`delete(name)`** – remove the parameter by `name`,
--   **`get(name)`** – get the parameter by `name`,
--   **`getAll(name)`** – get all parameters with the same `name` (that’s possible, e.g. `?user=John&user=Pete`),
--   **`has(name)`** – check for the existence of the parameter by `name`,
--   **`set(name, value)`** – set/replace the parameter,
--   **`sort()`** – sort parameters by name, rarely needed,
--   …and it’s also iterable, similar to `Map`.
+- **`append(name, value)`** – add the parameter by `name`,
+- **`delete(name)`** – remove the parameter by `name`,
+- **`get(name)`** – get the parameter by `name`,
+- **`getAll(name)`** – get all parameters with the same `name` (that’s possible, e.g. `?user=John&user=Pete`),
+- **`has(name)`** – check for the existence of the parameter by `name`,
+- **`set(name, value)`** – set/replace the parameter,
+- **`sort()`** – sort parameters by name, rarely needed,
+- …and it’s also iterable, similar to `Map`.
 
 An example with parameters that contain spaces and punctuation marks:
 
@@ -186,10 +186,10 @@ If we use a string though, we need to encode/decode special characters manually.
 
 There are built-in functions for that:
 
--   [encodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) – encodes URL as a whole.
--   [decodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI) – decodes it back.
--   [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) – encodes a URL component, such as a search parameter, or a hash, or a pathname.
--   [decodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) – decodes it back.
+- [encodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) – encodes URL as a whole.
+- [decodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI) – decodes it back.
+- [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) – encodes a URL component, such as a search parameter, or a hash, or a pathname.
+- [decodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) – decodes it back.
 
 A natural question is: “What’s the difference between `encodeURIComponent` and `encodeURI`? When we should use either?”
 
@@ -201,8 +201,8 @@ As we can see, characters such as `:`, `?`, `=`, `&`, `#` are allowed in URL.
 
 …On the other hand, if we look at a single URL component, such as a search parameter, these characters must be encoded, not to break the formatting.
 
--   `encodeURI` encodes only characters that are totally forbidden in URL.
--   `encodeURIComponent` encodes same characters, and, in addition to them, characters `#`, `$`, `&`, `+`, `,`, `/`, `:`, `;`, `=`, `?` and `@`.
+- `encodeURI` encodes only characters that are totally forbidden in URL.
+- `encodeURIComponent` encodes same characters, and, in addition to them, characters `#`, `$`, `&`, `+`, `,`, `/`, `:`, `;`, `=`, `?` and `@`.
 
 So, for a whole URL we can use `encodeURI`:
 
@@ -273,23 +273,23 @@ Such cases are rare, `encode*` functions work well most of the time.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/network" class="sidebar__link">Network requests</a>
+- <a href="/network" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
--   <a href="#creating-a-url" class="sidebar__link">Creating a URL</a>
--   <a href="#searchparams" class="sidebar__link">SearchParams “?…”</a>
--   <a href="#encoding" class="sidebar__link">Encoding</a>
+- <a href="#creating-a-url" class="sidebar__link">Creating a URL</a>
+- <a href="#searchparams" class="sidebar__link">SearchParams “?…”</a>
+- <a href="#encoding" class="sidebar__link">Encoding</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -297,8 +297,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/07-url" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

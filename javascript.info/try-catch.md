@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/try-catch" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/try-catch" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/try-catch" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Ftry-catch" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Ftry-catch" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/js" class="breadcrumbs__link"><span>The JavaScript language</span></a></span>
@@ -73,45 +73,45 @@ So, an error inside the `try {...}` block does not kill the script – we have a
 
 Let’s look at some examples.
 
--   An errorless example: shows `alert` `(1)` and `(2)`:
+- An errorless example: shows `alert` `(1)` and `(2)`:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        try {
+      try {
 
-          alert('Start of try runs');  // (1) <--
+        alert('Start of try runs');  // (1) <--
 
-          // ...no errors here
+        // ...no errors here
 
-          alert('End of try runs');   // (2) <--
+        alert('End of try runs');   // (2) <--
 
-        } catch (err) {
+      } catch (err) {
 
-          alert('Catch is ignored, because there are no errors'); // (3)
+        alert('Catch is ignored, because there are no errors'); // (3)
 
-        }
+      }
 
--   An example with an error: shows `(1)` and `(3)`:
+- An example with an error: shows `(1)` and `(3)`:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        try {
+      try {
 
-          alert('Start of try runs');  // (1) <--
+        alert('Start of try runs');  // (1) <--
 
-          lalala; // error, variable is not defined!
+        lalala; // error, variable is not defined!
 
-          alert('End of try (never reached)');  // (2)
+        alert('End of try (never reached)');  // (2)
 
-        } catch (err) {
+      } catch (err) {
 
-          alert(`Error has occurred!`); // (3) <--
+        alert(`Error has occurred!`); // (3) <--
 
-        }
+      }
 
 <span class="important__type">`try...catch` only works for runtime errors</span>
 
@@ -375,7 +375,7 @@ Now `catch` became a single place for all error handling: both for `JSON.parse` 
 
 ## <a href="#rethrowing" id="rethrowing" class="main__anchor">Rethrowing</a>
 
-In the example above we use `try...catch` to handle incorrect data. But is it possible that *another unexpected error* occurs within the `try {...}` block? Like a programming error (variable is not defined) or something else, not just this “incorrect data” thing.
+In the example above we use `try...catch` to handle incorrect data. But is it possible that _another unexpected error_ occurs within the `try {...}` block? Like a programming error (variable is not defined) or something else, not just this “incorrect data” thing.
 
 For example:
 
@@ -396,7 +396,7 @@ For example:
 
 Of course, everything’s possible! Programmers do make mistakes. Even in open-source utilities used by millions for decades – suddenly a bug may be discovered that leads to terrible hacks.
 
-In our case, `try...catch` is placed to catch “incorrect data” errors. But by its nature, `catch` gets *all* errors from `try`. Here it gets an unexpected error, but still shows the same `"JSON Error"` message. That’s wrong and also makes the code more difficult to debug.
+In our case, `try...catch` is placed to catch “incorrect data” errors. But by its nature, `catch` gets _all_ errors from `try`. Here it gets an unexpected error, but still shows the same `"JSON Error"` message. That’s wrong and also makes the code more difficult to debug.
 
 To avoid such problems, we can employ the “rethrowing” technique. The rule is simple:
 
@@ -493,8 +493,8 @@ The `try...catch` construct may have one more code clause: `finally`.
 
 If it exists, it runs in all cases:
 
--   after `try`, if there were no errors,
--   after `catch`, if there were errors.
+- after `try`, if there were no errors,
+- after `catch`, if there were errors.
 
 The extended syntax looks like this:
 
@@ -569,13 +569,13 @@ In other words, the function may finish with `return` or `throw`, that doesn’t
 
 <span class="important__type">Variables are local inside `try...catch...finally`</span>
 
-Please note that `result` and `diff` variables in the code above are declared *before* `try...catch`.
+Please note that `result` and `diff` variables in the code above are declared _before_ `try...catch`.
 
 Otherwise, if we declared `let` in `try` block, it would only be visible inside of it.
 
 <span class="important__type">`finally` and `return`</span>
 
-The `finally` clause works for *any* exit from `try...catch`. That includes an explicit `return`.
+The `finally` clause works for _any_ exit from `try...catch`. That includes an explicit `return`.
 
 In the example below, there’s a `return` in `try`. In this case, `finally` is executed just before the control returns to the outer code.
 
@@ -690,15 +690,15 @@ There may be no `catch` section or no `finally`, so shorter constructs `try...ca
 
 Error objects have following properties:
 
--   `message` – the human-readable error message.
--   `name` – the string with error name (error constructor name).
--   `stack` (non-standard, but well-supported) – the stack at the moment of error creation.
+- `message` – the human-readable error message.
+- `name` – the string with error name (error constructor name).
+- `stack` (non-standard, but well-supported) – the stack at the moment of error creation.
 
 If an error object is not needed, we can omit it by using `catch {` instead of `catch (err) {`.
 
 We can also generate our own errors using the `throw` operator. Technically, the argument of `throw` can be anything, but usually it’s an error object inheriting from the built-in `Error` class. More on extending errors in the next chapter.
 
-*Rethrowing* is a very important pattern of error handling: a `catch` block usually expects and knows how to handle the particular error type, so it should rethrow errors it doesn’t know.
+_Rethrowing_ is a very important pattern of error handling: a `catch` block usually expects and knows how to handle the particular error type, so it should rethrow errors it doesn’t know.
 
 Even if we don’t have `try...catch`, most environments allow us to setup a “global” error handler to catch errors that “fall out”. In-browser, that’s `window.onerror`.
 
@@ -742,7 +742,7 @@ The difference becomes obvious when we look at the code inside a function.
 
 The behavior is different if there’s a “jump out” of `try...catch`.
 
-For instance, when there’s a `return` inside `try...catch`. The `finally` clause works in case of *any* exit from `try...catch`, even via the `return` statement: right after `try...catch` is done, but before the calling code gets the control.
+For instance, when there’s a `return` inside `try...catch`. The `finally` clause works in case of _any_ exit from `try...catch`, even via the `return` statement: right after `try...catch` is done, but before the calling code gets the control.
 
 <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
@@ -796,30 +796,30 @@ It’s `finally` that guarantees the cleanup here. If we just put the code at th
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/error-handling" class="sidebar__link">Error handling</a>
+- <a href="/error-handling" class="sidebar__link">Error handling</a>
 
 #### Lesson navigation
 
--   <a href="#the-try-catch-syntax" class="sidebar__link">The “try…catch” syntax</a>
--   <a href="#error-object" class="sidebar__link">Error object</a>
--   <a href="#optional-catch-binding" class="sidebar__link">Optional “catch” binding</a>
--   <a href="#using-try-catch" class="sidebar__link">Using “try…catch”</a>
--   <a href="#throwing-our-own-errors" class="sidebar__link">Throwing our own errors</a>
--   <a href="#rethrowing" class="sidebar__link">Rethrowing</a>
--   <a href="#try-catch-finally" class="sidebar__link">try…catch…finally</a>
--   <a href="#global-catch" class="sidebar__link">Global catch</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#the-try-catch-syntax" class="sidebar__link">The “try…catch” syntax</a>
+- <a href="#error-object" class="sidebar__link">Error object</a>
+- <a href="#optional-catch-binding" class="sidebar__link">Optional “catch” binding</a>
+- <a href="#using-try-catch" class="sidebar__link">Using “try…catch”</a>
+- <a href="#throwing-our-own-errors" class="sidebar__link">Throwing our own errors</a>
+- <a href="#rethrowing" class="sidebar__link">Rethrowing</a>
+- <a href="#try-catch-finally" class="sidebar__link">try…catch…finally</a>
+- <a href="#global-catch" class="sidebar__link">Global catch</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (1)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (1)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -827,8 +827,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/10-error-handling/1-try-catch" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

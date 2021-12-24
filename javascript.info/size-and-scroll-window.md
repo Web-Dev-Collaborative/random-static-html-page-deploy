@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fsize-and-scroll-window" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fsize-and-scroll-window" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/ui" class="breadcrumbs__link"><span>Browser: Document, Events, Interfaces</span></a></span>
@@ -58,7 +53,7 @@ If there’s a scrollbar, and it occupies some space, then these two lines show 
     alert( window.innerWidth ); // full window width
     alert( document.documentElement.clientWidth ); // window width minus the scrollbar
 
-In most cases, we need the *available* window width in order to draw or position something within scrollbars (if there are any), so we should use `documentElement.clientHeight/clientWidth`.
+In most cases, we need the _available_ window width in order to draw or position something within scrollbars (if there are any), so we should use `documentElement.clientHeight/clientWidth`.
 
 <span class="important__type">`DOCTYPE` is important</span>
 
@@ -109,8 +104,8 @@ These properties are read-only.
 
 For historical reasons, both properties exist, but they are the same:
 
--   `window.pageXOffset` is an alias of `window.scrollX`.
--   `window.pageYOffset` is an alias of `window.scrollY`.
+- `window.pageXOffset` is an alias of `window.scrollX`.
+- `window.pageYOffset` is an alias of `window.scrollY`.
 
 ## <a href="#window-scroll" id="window-scroll" class="main__anchor">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
 
@@ -126,17 +121,17 @@ We can do the same for the page using `document.documentElement.scrollTop/scroll
 
 Alternatively, there’s a simpler, universal solution: special methods [window.scrollBy(x,y)](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy) and [window.scrollTo(pageX,pageY)](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo).
 
--   The method `scrollBy(x,y)` scrolls the page *relative to its current position*. For instance, `scrollBy(0,10)` scrolls the page `10px` down.
+- The method `scrollBy(x,y)` scrolls the page _relative to its current position_. For instance, `scrollBy(0,10)` scrolls the page `10px` down.
 
-    The button below demonstrates this:
+  The button below demonstrates this:
 
-    window.scrollBy(0,10)
+  window.scrollBy(0,10)
 
--   The method `scrollTo(pageX,pageY)` scrolls the page *to absolute coordinates*, so that the top-left corner of the visible part has coordinates `(pageX, pageY)` relative to the document’s top-left corner. It’s like setting `scrollLeft/scrollTop`.
+- The method `scrollTo(pageX,pageY)` scrolls the page _to absolute coordinates_, so that the top-left corner of the visible part has coordinates `(pageX, pageY)` relative to the document’s top-left corner. It’s like setting `scrollLeft/scrollTop`.
 
-    To scroll to the very beginning, we can use `scrollTo(0,0)`.
+  To scroll to the very beginning, we can use `scrollTo(0,0)`.
 
-    window.scrollTo(0,0)
+  window.scrollTo(0,0)
 
 These methods work for all browsers the same way.
 
@@ -146,8 +141,8 @@ For completeness, let’s cover one more method: [elem.scrollIntoView(top)](http
 
 The call to `elem.scrollIntoView(top)` scrolls the page to make `elem` visible. It has one argument:
 
--   If `top=true` (that’s the default), then the page will be scrolled to make `elem` appear on the top of the window. The upper edge of the element will be aligned with the window top.
--   If `top=false`, then the page scrolls to make `elem` appear at the bottom. The bottom edge of the element will be aligned with the window bottom.
+- If `top=true` (that’s the default), then the page will be scrolled to make `elem` appear on the top of the window. The upper edge of the element will be aligned with the window top.
+- If `top=false`, then the page scrolls to make `elem` appear at the bottom. The bottom edge of the element will be aligned with the window bottom.
 
 The button below scrolls the page to position itself at the window top:
 
@@ -181,25 +176,25 @@ That looks a bit odd, but can be worked around if we compare `clientWidth` befor
 
 Geometry:
 
--   Width/height of the visible part of the document (content area width/height): `document.documentElement.clientWidth/clientHeight`
+- Width/height of the visible part of the document (content area width/height): `document.documentElement.clientWidth/clientHeight`
 
--   Width/height of the whole document, with the scrolled out part:
+- Width/height of the whole document, with the scrolled out part:
 
-        let scrollHeight = Math.max(
-          document.body.scrollHeight, document.documentElement.scrollHeight,
-          document.body.offsetHeight, document.documentElement.offsetHeight,
-          document.body.clientHeight, document.documentElement.clientHeight
-        );
+      let scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      );
 
 Scrolling:
 
--   Read the current scroll: `window.pageYOffset/pageXOffset`.
+- Read the current scroll: `window.pageYOffset/pageXOffset`.
 
--   Change the current scroll:
+- Change the current scroll:
 
-    -   `window.scrollTo(pageX,pageY)` – absolute coordinates,
-    -   `window.scrollBy(x,y)` – scroll relative the current place,
-    -   `elem.scrollIntoView(top)` – scroll to make `elem` visible (align with the top/bottom of the window).
+  - `window.scrollTo(pageX,pageY)` – absolute coordinates,
+  - `window.scrollBy(x,y)` – scroll relative the current place,
+  - `elem.scrollIntoView(top)` – scroll to make `elem` visible (align with the top/bottom of the window).
 
 <a href="/size-and-scroll" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="/coordinates" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -211,27 +206,27 @@ Scrolling:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/document" class="sidebar__link">Document</a>
+- <a href="/document" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
--   <a href="#width-height-of-the-window" class="sidebar__link">Width/height of the window</a>
--   <a href="#width-height-of-the-document" class="sidebar__link">Width/height of the document</a>
--   <a href="#page-scroll" class="sidebar__link">Get the current scroll</a>
--   <a href="#window-scroll" class="sidebar__link">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
--   <a href="#scrollintoview" class="sidebar__link">scrollIntoView</a>
--   <a href="#forbid-the-scrolling" class="sidebar__link">Forbid the scrolling</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#width-height-of-the-window" class="sidebar__link">Width/height of the window</a>
+- <a href="#width-height-of-the-document" class="sidebar__link">Width/height of the document</a>
+- <a href="#page-scroll" class="sidebar__link">Get the current scroll</a>
+- <a href="#window-scroll" class="sidebar__link">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
+- <a href="#scrollintoview" class="sidebar__link">scrollIntoView</a>
+- <a href="#forbid-the-scrolling" class="sidebar__link">Forbid the scrolling</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -239,8 +234,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/10-size-and-scroll-window" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

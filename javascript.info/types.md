@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/types" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/types" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/types" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Ftypes" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Ftypes" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/js" class="breadcrumbs__link"><span>The JavaScript language</span></a></span>
@@ -58,47 +58,47 @@ Programming languages that allow such things, such as JavaScript, are called “
     let n = 123;
     n = 12.345;
 
-The *number* type represents both integer and floating point numbers.
+The _number_ type represents both integer and floating point numbers.
 
 There are many operations for numbers, e.g. multiplication `*`, division `/`, addition `+`, subtraction `-`, and so on.
 
 Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
 
--   `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that’s greater than any number.
+- `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that’s greater than any number.
 
-    We can get it as a result of division by zero:
+  We can get it as a result of division by zero:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( 1 / 0 ); // Infinity
+      alert( 1 / 0 ); // Infinity
 
-    Or just reference it directly:
+  Or just reference it directly:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( Infinity ); // Infinity
+      alert( Infinity ); // Infinity
 
--   `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
+- `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( "not a number" / 2 ); // NaN, such division is erroneous
+      alert( "not a number" / 2 ); // NaN, such division is erroneous
 
-    `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
+  `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
 
-    <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
+  <a href="#" class="toolbar__button toolbar__button_run" title="run"></a>
 
-    <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+  <a href="#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-        alert( "not a number" / 2 + 5 ); // NaN
+      alert( "not a number" / 2 + 5 ); // NaN
 
-    So, if there’s a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
+  So, if there’s a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
 
 <span class="important__type">Mathematical operations are safe</span>
 
@@ -129,7 +129,7 @@ As `BigInt` numbers are rarely needed, we don’t cover them here, but devoted t
 
 Right now, `BigInt` is supported in Firefox/Chrome/Edge/Safari, but not in IE.
 
-You can check [*MDN* BigInt compatibility table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#Browser_compatibility) to know which versions of a browser are supported.
+You can check [_MDN_ BigInt compatibility table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#Browser_compatibility) to know which versions of a browser are supported.
 
 ## <a href="#string" id="string" class="main__anchor">String</a>
 
@@ -173,7 +173,7 @@ Please note that this can only be done in backticks. Other quotes don’t have t
 
 We’ll cover strings more thoroughly in the chapter [Strings](/string).
 
-<span class="important__type">There is no *character* type.</span>
+<span class="important__type">There is no _character_ type.</span>
 
 In some languages, there is a special “character” type for a single character. For example, in the C language and in Java it is called “char”.
 
@@ -298,20 +298,20 @@ The last three lines may need additional explanation:
 
 There are 8 basic data types in JavaScript.
 
--   `number` for numbers of any kind: integer or floating-point, integers are limited by `±(253-1)`.
--   `bigint` is for integer numbers of arbitrary length.
--   `string` for strings. A string may have zero or more characters, there’s no separate single-character type.
--   `boolean` for `true`/`false`.
--   `null` for unknown values – a standalone type that has a single value `null`.
--   `undefined` for unassigned values – a standalone type that has a single value `undefined`.
--   `object` for more complex data structures.
--   `symbol` for unique identifiers.
+- `number` for numbers of any kind: integer or floating-point, integers are limited by `±(253-1)`.
+- `bigint` is for integer numbers of arbitrary length.
+- `string` for strings. A string may have zero or more characters, there’s no separate single-character type.
+- `boolean` for `true`/`false`.
+- `null` for unknown values – a standalone type that has a single value `null`.
+- `undefined` for unassigned values – a standalone type that has a single value `undefined`.
+- `object` for more complex data structures.
+- `symbol` for unique identifiers.
 
 The `typeof` operator allows us to see which type is stored in a variable.
 
--   Two forms: `typeof x` or `typeof(x)`.
--   Returns a string with the name of the type, like `"string"`.
--   For `null` returns `"object"` – this is an error in the language, it’s not actually an object.
+- Two forms: `typeof x` or `typeof(x)`.
+- Returns a string with the name of the type, like `"string"`.
+- For `null` returns `"object"` – this is an error in the language, it’s not actually an object.
 
 In the next chapters, we’ll concentrate on primitive values and once we’re familiar with them, we’ll move on to objects.
 
@@ -362,30 +362,30 @@ Backticks embed the expression inside `${...}` into the string.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/first-steps" class="sidebar__link">JavaScript Fundamentals</a>
+- <a href="/first-steps" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
--   <a href="#number" class="sidebar__link">Number</a>
--   <a href="#bigint-type" class="sidebar__link">BigInt</a>
--   <a href="#string" class="sidebar__link">String</a>
--   <a href="#boolean-logical-type" class="sidebar__link">Boolean (logical type)</a>
--   <a href="#the-null-value" class="sidebar__link">The “null” value</a>
--   <a href="#the-undefined-value" class="sidebar__link">The “undefined” value</a>
--   <a href="#objects-and-symbols" class="sidebar__link">Objects and Symbols</a>
--   <a href="#type-typeof" class="sidebar__link">The typeof operator</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#number" class="sidebar__link">Number</a>
+- <a href="#bigint-type" class="sidebar__link">BigInt</a>
+- <a href="#string" class="sidebar__link">String</a>
+- <a href="#boolean-logical-type" class="sidebar__link">Boolean (logical type)</a>
+- <a href="#the-null-value" class="sidebar__link">The “null” value</a>
+- <a href="#the-undefined-value" class="sidebar__link">The “undefined” value</a>
+- <a href="#objects-and-symbols" class="sidebar__link">Objects and Symbols</a>
+- <a href="#type-typeof" class="sidebar__link">The typeof operator</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (1)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (1)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -393,8 +393,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/05-types" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fserver-sent-events" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fserver-sent-events" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/network" class="breadcrumbs__link"><span>Network requests</span></a></span>
@@ -57,9 +52,9 @@ The server should respond with status 200 and the header `Content-Type: text/eve
     data: Message 3
     data: of two lines
 
--   A message text goes after `data:`, the space after the colon is optional.
--   Messages are delimited with double line breaks `\n\n`.
--   To send a line break `\n`, we can immediately send one more `data:` (3rd message above).
+- A message text goes after `data:`, the space after the colon is optional.
+- Messages are delimited with double line breaks `\n\n`.
+- To send a line break `\n`, we can immediately send one more `data:` (3rd message above).
 
 In practice, complex messages are usually sent JSON-encoded. Line-breaks are encoded as `\n` within them, so multiline `data:` messages are not necessary.
 
@@ -113,12 +108,12 @@ The `retry:` may come both together with some data, or as a standalone message.
 
 The browser should wait that many milliseconds before reconnecting. Or longer, e.g. if the browser knows (from OS) that there’s no network connection at the moment, it may wait until the connection appears, and then retry.
 
--   If the server wants the browser to stop reconnecting, it should respond with HTTP status 204.
--   If the browser wants to close the connection, it should call `eventSource.close()`:
+- If the server wants the browser to stop reconnecting, it should respond with HTTP status 204.
+- If the browser wants to close the connection, it should call `eventSource.close()`:
 
-    let eventSource = new EventSource(...);
+  let eventSource = new EventSource(...);
 
-    eventSource.close();
+  eventSource.close();
 
 Also, there will be no reconnection if the response has an incorrect `Content-Type` or its HTTP status differs from 301, 307, 200 and 204. In such cases the `"error"` event will be emitted, and the browser won’t reconnect.
 
@@ -144,8 +139,8 @@ To correctly resume the connection, each message should have an `id` field, like
 
 When a message with `id:` is received, the browser:
 
--   Sets the property `eventSource.lastEventId` to its value.
--   Upon reconnection sends the header `Last-Event-ID` with that `id`, so that the server may re-send following messages.
+- Sets the property `eventSource.lastEventId` to its value.
+- Upon reconnection sends the header `Last-Event-ID` with that `id`, so that the server may re-send following messages.
 
 <span class="important__type">Put `id:` after `data:`</span>
 
@@ -167,9 +162,9 @@ We can query this property to know the state of `EventSource`.
 
 By default `EventSource` object generates three events:
 
--   `message` – a message received, available as `event.data`.
--   `open` – the connection is open.
--   `error` – the connection could not be established, e.g. the server returned HTTP 500 status.
+- `message` – a message received, available as `event.data`.
+- `open` – the connection is open.
+- `error` – the connection could not be established, e.g. the server returned HTTP 500 status.
 
 The server may specify another type of event with `event: ...` at the event start.
 
@@ -317,9 +312,9 @@ index.html
 
 It offers:
 
--   Automatic reconnect, with tunable `retry` timeout.
--   Message ids to resume events, the last received identifier is sent in `Last-Event-ID` header upon reconnection.
--   The current state is in the `readyState` property.
+- Automatic reconnect, with tunable `retry` timeout.
+- Message ids to resume events, the last received identifier is sent in `Last-Event-ID` header upon reconnection.
+- The current state is in the `readyState` property.
 
 That makes `EventSource` a viable alternative to `WebSocket`, as the latter is more low-level and lacks such built-in features (though they can be implemented).
 
@@ -367,10 +362,10 @@ The server sends messages, delimited by `\n\n`.
 
 A message may have following fields:
 
--   `data:` – message body, a sequence of multiple `data` is interpreted as a single message, with `\n` between the parts.
--   `id:` – renews `lastEventId`, sent in `Last-Event-ID` on reconnect.
--   `retry:` – recommends a retry delay for reconnections in ms. There’s no way to set it from JavaScript.
--   `event:` – event name, must precede `data:`.
+- `data:` – message body, a sequence of multiple `data` is interpreted as a single message, with `\n` between the parts.
+- `id:` – renews `lastEventId`, sent in `Last-Event-ID` on reconnect.
+- `retry:` – recommends a retry delay for reconnections in ms. There’s no way to set it from JavaScript.
+- `event:` – event name, must precede `data:`.
 
 A message may include one or more fields in any order, but `id:` usually goes the last.
 
@@ -384,27 +379,27 @@ A message may include one or more fields in any order, but `id:` usually goes th
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/network" class="sidebar__link">Network requests</a>
+- <a href="/network" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
--   <a href="#getting-messages" class="sidebar__link">Getting messages</a>
--   <a href="#reconnection" class="sidebar__link">Reconnection</a>
--   <a href="#message-id" class="sidebar__link">Message id</a>
--   <a href="#connection-status-readystate" class="sidebar__link">Connection status: readyState</a>
--   <a href="#event-types" class="sidebar__link">Event types</a>
--   <a href="#full-example" class="sidebar__link">Full example</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#getting-messages" class="sidebar__link">Getting messages</a>
+- <a href="#reconnection" class="sidebar__link">Reconnection</a>
+- <a href="#message-id" class="sidebar__link">Message id</a>
+- <a href="#connection-status-readystate" class="sidebar__link">Connection status: readyState</a>
+- <a href="#event-types" class="sidebar__link">Event types</a>
+- <a href="#full-example" class="sidebar__link">Full example</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -412,8 +407,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/12-server-sent-events" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

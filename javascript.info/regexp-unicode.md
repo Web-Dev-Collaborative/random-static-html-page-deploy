@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fregexp-unicode" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fregexp-unicode" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/regular-expressions" class="breadcrumbs__link"><span>Regular expressions</span></a></span>
@@ -76,58 +71,58 @@ In the example below three kinds of letters will be found: English, Georgian and
 
 Here’s the main character categories and their subcategories:
 
--   Letter `L`:
-    -   lowercase `Ll`
-    -   modifier `Lm`,
-    -   titlecase `Lt`,
-    -   uppercase `Lu`,
-    -   other `Lo`.
--   Number `N`:
-    -   decimal digit `Nd`,
-    -   letter number `Nl`,
-    -   other `No`.
--   Punctuation `P`:
-    -   connector `Pc`,
-    -   dash `Pd`,
-    -   initial quote `Pi`,
-    -   final quote `Pf`,
-    -   open `Ps`,
-    -   close `Pe`,
-    -   other `Po`.
--   Mark `M` (accents etc):
-    -   spacing combining `Mc`,
-    -   enclosing `Me`,
-    -   non-spacing `Mn`.
--   Symbol `S`:
-    -   currency `Sc`,
-    -   modifier `Sk`,
-    -   math `Sm`,
-    -   other `So`.
--   Separator `Z`:
-    -   line `Zl`,
-    -   paragraph `Zp`,
-    -   space `Zs`.
--   Other `C`:
-    -   control `Cc`,
-    -   format `Cf`,
-    -   not assigned `Cn`,
-    -   private use `Co`,
-    -   surrogate `Cs`.
+- Letter `L`:
+  - lowercase `Ll`
+  - modifier `Lm`,
+  - titlecase `Lt`,
+  - uppercase `Lu`,
+  - other `Lo`.
+- Number `N`:
+  - decimal digit `Nd`,
+  - letter number `Nl`,
+  - other `No`.
+- Punctuation `P`:
+  - connector `Pc`,
+  - dash `Pd`,
+  - initial quote `Pi`,
+  - final quote `Pf`,
+  - open `Ps`,
+  - close `Pe`,
+  - other `Po`.
+- Mark `M` (accents etc):
+  - spacing combining `Mc`,
+  - enclosing `Me`,
+  - non-spacing `Mn`.
+- Symbol `S`:
+  - currency `Sc`,
+  - modifier `Sk`,
+  - math `Sm`,
+  - other `So`.
+- Separator `Z`:
+  - line `Zl`,
+  - paragraph `Zp`,
+  - space `Zs`.
+- Other `C`:
+  - control `Cc`,
+  - format `Cf`,
+  - not assigned `Cn`,
+  - private use `Co`,
+  - surrogate `Cs`.
 
 So, e.g. if we need letters in lower case, we can write `\p{Ll}`, punctuation signs: `\p{P}` and so on.
 
 There are also other derived categories, like:
 
--   `Alphabetic` (`Alpha`), includes Letters `L`, plus letter numbers `Nl` (e.g. Ⅻ – a character for the roman number 12), plus some other symbols `Other_Alphabetic` (`OAlpha`).
--   `Hex_Digit` includes hexadecimal digits: `0-9`, `a-f`.
--   …And so on.
+- `Alphabetic` (`Alpha`), includes Letters `L`, plus letter numbers `Nl` (e.g. Ⅻ – a character for the roman number 12), plus some other symbols `Other_Alphabetic` (`OAlpha`).
+- `Hex_Digit` includes hexadecimal digits: `0-9`, `a-f`.
+- …And so on.
 
 Unicode supports many different properties, their full list would require a lot of space, so here are the references:
 
--   List all properties by a character: <https://unicode.org/cldr/utility/character.jsp>.
--   List all characters by a property: <https://unicode.org/cldr/utility/list-unicodeset.jsp>.
--   Short aliases for properties: <https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt>.
--   A full base of Unicode characters in text format, with all properties, is here: <https://www.unicode.org/Public/UCD/latest/ucd/>.
+- List all properties by a character: <https://unicode.org/cldr/utility/character.jsp>.
+- List all characters by a property: <https://unicode.org/cldr/utility/list-unicodeset.jsp>.
+- Short aliases for properties: <https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt>.
+- A full base of Unicode characters in text format, with all properties, is here: <https://www.unicode.org/Public/UCD/latest/ucd/>.
 
 ### <a href="#example-hexadecimal-numbers" id="example-hexadecimal-numbers" class="main__anchor">Example: hexadecimal numbers</a>
 
@@ -147,7 +142,7 @@ A hex digit can be denoted as `\p{Hex_Digit}`:
 
 Let’s look for Chinese hieroglyphs.
 
-There’s a Unicode property `Script` (a writing system), that may have a value: `Cyrillic`, `Greek`, `Arabic`, `Han` (Chinese) and so on, [here’s the full list](https://en.wikipedia.org/wiki/Script_(Unicode)).
+There’s a Unicode property `Script` (a writing system), that may have a value: `Cyrillic`, `Greek`, `Arabic`, `Han` (Chinese) and so on, [here’s the full list](<https://en.wikipedia.org/wiki/Script_(Unicode)>).
 
 To look for characters in a given writing system we should use `Script=<value>`, e.g. for Cyrillic letters: `\p{sc=Cyrillic}`, for Chinese hieroglyphs: `\p{sc=Han}`, and so on:
 
@@ -200,22 +195,22 @@ With Unicode properties we can look for words in given languages, special charac
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
+- <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
--   <a href="#unicode-properties-p" class="sidebar__link">Unicode properties \p{…}</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#unicode-properties-p" class="sidebar__link">Unicode properties \p{…}</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -223,8 +218,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/03-regexp-unicode" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fregexp-methods" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fregexp-methods" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/regular-expressions" class="breadcrumbs__link"><span>Regular expressions</span></a></span>
@@ -282,7 +277,7 @@ Using a function gives us the ultimate replacement power, because it gets all th
 
 This method is essentially the same as `str.replace`, with two major differences:
 
-1.  If the first argument is a string, it replaces *all occurences* of the string, while `replace` replaces only the *first occurence*.
+1.  If the first argument is a string, it replaces _all occurences_ of the string, while `replace` replaces only the _first occurence_.
 2.  If the first argument is a regular expression without the `g` flag, there’ll be an error. With `g` flag, it works the same as `replace`.
 
 The main use case for `replaceAll` is replacing all occurences of a string.
@@ -306,10 +301,10 @@ If there’s no `g`, then `regexp.exec(str)` returns the first match exactly as 
 
 But if there’s flag `g`, then:
 
--   A call to `regexp.exec(str)` returns the first match and saves the position immediately after it in the property `regexp.lastIndex`.
--   The next such call starts the search from position `regexp.lastIndex`, returns the next match and saves the position after it in `regexp.lastIndex`.
--   …And so on.
--   If there are no matches, `regexp.exec` returns `null` and resets `regexp.lastIndex` to `0`.
+- A call to `regexp.exec(str)` returns the first match and saves the position immediately after it in the property `regexp.lastIndex`.
+- The next such call starts the search from position `regexp.lastIndex`, returns the next match and saves the position after it in `regexp.lastIndex`.
+- …And so on.
+- If there are no matches, `regexp.exec` returns `null` and resets `regexp.lastIndex` to `0`.
 
 So, repeated calls return all matches one after another, using property `regexp.lastIndex` to keep track of the current search position.
 
@@ -436,28 +431,28 @@ To work around that, we can set `regexp.lastIndex = 0` before each search. Or in
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
+- <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
--   <a href="#str-match-regexp" class="sidebar__link">str.match(regexp)</a>
--   <a href="#str-matchall-regexp" class="sidebar__link">str.matchAll(regexp)</a>
--   <a href="#str-split-regexp-substr-limit" class="sidebar__link">str.split(regexp|substr, limit)</a>
--   <a href="#str-search-regexp" class="sidebar__link">str.search(regexp)</a>
--   <a href="#str-replace-str-regexp-str-func" class="sidebar__link">str.replace(str|regexp, str|func)</a>
--   <a href="#str-replaceall-str-regexp-str-func" class="sidebar__link">str.replaceAll(str|regexp, str|func)</a>
--   <a href="#regexp-exec-str" class="sidebar__link">regexp.exec(str)</a>
--   <a href="#regexp-test-str" class="sidebar__link">regexp.test(str)</a>
+- <a href="#str-match-regexp" class="sidebar__link">str.match(regexp)</a>
+- <a href="#str-matchall-regexp" class="sidebar__link">str.matchAll(regexp)</a>
+- <a href="#str-split-regexp-substr-limit" class="sidebar__link">str.split(regexp|substr, limit)</a>
+- <a href="#str-search-regexp" class="sidebar__link">str.search(regexp)</a>
+- <a href="#str-replace-str-regexp-str-func" class="sidebar__link">str.replace(str|regexp, str|func)</a>
+- <a href="#str-replaceall-str-regexp-str-func" class="sidebar__link">str.replaceAll(str|regexp, str|func)</a>
+- <a href="#regexp-exec-str" class="sidebar__link">regexp.exec(str)</a>
+- <a href="#regexp-test-str" class="sidebar__link">regexp.test(str)</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -465,8 +460,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/17-regexp-methods" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fstring" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fstring" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/js" class="breadcrumbs__link"><span>The JavaScript language</span></a></span>
@@ -474,7 +469,7 @@ Negative values for `start/end` are also possible. They mean the position is cou
     alert( str.slice(-4, -1) ); // 'gif'
 
 `str.substring(start [, end])`  
-Returns the part of the string *between* `start` and `end`.
+Returns the part of the string _between_ `start` and `end`.
 
 This is almost the same as `slice`, but it allows `start` to be greater than `end`.
 
@@ -605,8 +600,8 @@ Now it becomes obvious why `a > Z`.
 
 The characters are compared by their numeric code. The greater code means that the character is greater. The code for `a` (97) is greater than the code for `Z` (90).
 
--   All lowercase letters go after uppercase letters because their codes are greater.
--   Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
+- All lowercase letters go after uppercase letters because their codes are greater.
+- Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
 
 ### <a href="#correct-comparisons" id="correct-comparisons" class="main__anchor">Correct comparisons</a>
 
@@ -620,9 +615,9 @@ It provides a special method to compare strings in different languages, followin
 
 The call [str.localeCompare(str2)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare) returns an integer indicating whether `str` is less, equal or greater than `str2` according to the language rules:
 
--   Returns a negative number if `str` is less than `str2`.
--   Returns a positive number if `str` is greater than `str2`.
--   Returns `0` if they are equivalent.
+- Returns a negative number if `str` is less than `str2`.
+- Returns a positive number if `str` is greater than `str2`.
+- Returns `0` if they are equivalent.
 
 For instance:
 
@@ -759,20 +754,20 @@ If you want to learn more about normalization rules and variants – they are de
 
 ## <a href="#summary" id="summary" class="main__anchor">Summary</a>
 
--   There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
--   Strings in JavaScript are encoded using UTF-16.
--   We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
--   To get a character, use: `[]`.
--   To get a substring, use: `slice` or `substring`.
--   To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
--   To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
--   To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
+- There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
+- Strings in JavaScript are encoded using UTF-16.
+- We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
+- To get a character, use: `[]`.
+- To get a substring, use: `slice` or `substring`.
+- To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
+- To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
+- To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
 
 There are several other helpful methods in strings:
 
--   `str.trim()` – removes (“trims”) spaces from the beginning and end of the string.
--   `str.repeat(n)` – repeats the string `n` times.
--   …and more to be found in the [manual](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+- `str.trim()` – removes (“trims”) spaces from the beginning and end of the string.
+- `str.repeat(n)` – repeats the string `n` times.
+- …and more to be found in the [manual](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 
 Strings also have methods for doing search/replace with regular expressions. But that’s big topic, so it’s explained in a separate tutorial section [Regular expressions](/regular-expressions).
 
@@ -926,32 +921,32 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/data-types" class="sidebar__link">Data types</a>
+- <a href="/data-types" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
--   <a href="#quotes" class="sidebar__link">Quotes</a>
--   <a href="#special-characters" class="sidebar__link">Special characters</a>
--   <a href="#string-length" class="sidebar__link">String length</a>
--   <a href="#accessing-characters" class="sidebar__link">Accessing characters</a>
--   <a href="#strings-are-immutable" class="sidebar__link">Strings are immutable</a>
--   <a href="#changing-the-case" class="sidebar__link">Changing the case</a>
--   <a href="#searching-for-a-substring" class="sidebar__link">Searching for a substring</a>
--   <a href="#getting-a-substring" class="sidebar__link">Getting a substring</a>
--   <a href="#comparing-strings" class="sidebar__link">Comparing strings</a>
--   <a href="#internals-unicode" class="sidebar__link">Internals, Unicode</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#quotes" class="sidebar__link">Quotes</a>
+- <a href="#special-characters" class="sidebar__link">Special characters</a>
+- <a href="#string-length" class="sidebar__link">String length</a>
+- <a href="#accessing-characters" class="sidebar__link">Accessing characters</a>
+- <a href="#strings-are-immutable" class="sidebar__link">Strings are immutable</a>
+- <a href="#changing-the-case" class="sidebar__link">Changing the case</a>
+- <a href="#searching-for-a-substring" class="sidebar__link">Searching for a substring</a>
+- <a href="#getting-a-substring" class="sidebar__link">Getting a substring</a>
+- <a href="#comparing-strings" class="sidebar__link">Comparing strings</a>
+- <a href="#internals-unicode" class="sidebar__link">Internals, Unicode</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (4)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (4)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -959,8 +954,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/03-string" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

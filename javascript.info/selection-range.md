@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fselection-range" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fselection-range" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/ui" class="breadcrumbs__link"><span>Browser: Document, Events, Interfaces</span></a></span>
@@ -91,13 +86,13 @@ As we can see, this phrase consists of exactly two children of `<p>`, with index
 
 <figure><img src="/article/selection-range/range-example-p-0-1.svg" width="640" height="89" /></figure>
 
--   The starting point has `<p>` as the parent `node`, and `0` as the offset.
+- The starting point has `<p>` as the parent `node`, and `0` as the offset.
 
-    So we can set it as `range.setStart(p, 0)`.
+  So we can set it as `range.setStart(p, 0)`.
 
--   The ending point also has `<p>` as the parent `node`, but `2` as the offset (it specifies the range up to, but not including `offset`).
+- The ending point also has `<p>` as the parent `node`, but `2` as the offset (it specifies the range up to, but not including `offset`).
 
-    So we can set it as `range.setEnd(p, 2)`.
+  So we can set it as `range.setEnd(p, 2)`.
 
 Here’s the demo. If you run it, you can see that the text gets selected:
 
@@ -161,8 +156,8 @@ We already know how to do that. We just need to set the start and the end as a r
 
 We need to create a range, that:
 
--   starts from position 2 in `<p>` first child (taking all but two first letters of "Ex**ample:** ")
--   ends at the position 3 in `<b>` first child (taking first three letters of “**bol**d”, but no more):
+- starts from position 2 in `<p>` first child (taking all but two first letters of "Ex**ample:** ")
+- ends at the position 3 in `<b>` first child (taking first three letters of “**bol**d”, but no more):
 
 <a href="#" class="toolbar__button toolbar__button_run" title="show"></a>
 
@@ -192,14 +187,14 @@ The range object that we created in the example above has following properties:
 
 <figure><img src="/article/selection-range/range-example-p-2-b-3-range.svg" width="683" height="229" /></figure>
 
--   `startContainer`, `startOffset` – node and offset of the start,
-    -   in the example above: first text node inside `<p>` and `2`.
--   `endContainer`, `endOffset` – node and offset of the end,
-    -   in the example above: first text node inside `<b>` and `3`.
--   `collapsed` – boolean, `true` if the range starts and ends on the same point (so there’s no content inside the range),
-    -   in the example above: `false`
--   `commonAncestorContainer` – the nearest common ancestor of all nodes within the range,
-    -   in the example above: `<p>`
+- `startContainer`, `startOffset` – node and offset of the start,
+  - in the example above: first text node inside `<p>` and `2`.
+- `endContainer`, `endOffset` – node and offset of the end,
+  - in the example above: first text node inside `<b>` and `3`.
+- `collapsed` – boolean, `true` if the range starts and ends on the same point (so there’s no content inside the range),
+  - in the example above: `false`
+- `commonAncestorContainer` – the nearest common ancestor of all nodes within the range,
+  - in the example above: `<p>`
 
 ## <a href="#range-selection-methods" id="range-selection-methods" class="main__anchor">Range selection methods</a>
 
@@ -209,15 +204,15 @@ We’ve already seen `setStart` and `setEnd`, here are other similar methods.
 
 Set range start:
 
--   `setStart(node, offset)` set start at: position `offset` in `node`
--   `setStartBefore(node)` set start at: right before `node`
--   `setStartAfter(node)` set start at: right after `node`
+- `setStart(node, offset)` set start at: position `offset` in `node`
+- `setStartBefore(node)` set start at: right before `node`
+- `setStartAfter(node)` set start at: right after `node`
 
 Set range end (similar methods):
 
--   `setEnd(node, offset)` set end at: position `offset` in `node`
--   `setEndBefore(node)` set end at: right before `node`
--   `setEndAfter(node)` set end at: right after `node`
+- `setEnd(node, offset)` set end at: position `offset` in `node`
+- `setEndBefore(node)` set end at: right before `node`
+- `setEndAfter(node)` set end at: right after `node`
 
 Technically, `setStart/setEnd` can do anything, but more methods provide more convenience.
 
@@ -225,20 +220,20 @@ In all these methods, `node` can be both a text or element node: for text nodes 
 
 Even more methods to create ranges:
 
--   `selectNode(node)` set range to select the whole `node`
--   `selectNodeContents(node)` set range to select the whole `node` contents
--   `collapse(toStart)` if `toStart=true` set end=start, otherwise set start=end, thus collapsing the range
--   `cloneRange()` creates a new range with the same start/end
+- `selectNode(node)` set range to select the whole `node`
+- `selectNodeContents(node)` set range to select the whole `node` contents
+- `collapse(toStart)` if `toStart=true` set end=start, otherwise set start=end, thus collapsing the range
+- `cloneRange()` creates a new range with the same start/end
 
 ## <a href="#range-editing-methods" id="range-editing-methods" class="main__anchor">Range editing methods</a>
 
 Once the range is created, we can manipulate its content using these methods:
 
--   `deleteContents()` – remove range content from the document
--   `extractContents()` – remove range content from the document and return as [DocumentFragment](/modifying-document#document-fragment)
--   `cloneContents()` – clone range content and return as [DocumentFragment](/modifying-document#document-fragment)
--   `insertNode(node)` – insert `node` into the document at the beginning of the range
--   `surroundContents(node)` – wrap `node` around range content. For this to work, the range must contain both opening and closing tags for all elements inside it: no partial ranges like `<i>abc`.
+- `deleteContents()` – remove range content from the document
+- `extractContents()` – remove range content from the document and return as [DocumentFragment](/modifying-document#document-fragment)
+- `cloneContents()` – clone range content and return as [DocumentFragment](/modifying-document#document-fragment)
+- `insertNode(node)` – insert `node` into the document at the beginning of the range
+- `surroundContents(node)` – wrap `node` around range content. For this to work, the range must contain both opening and closing tags for all elements inside it: no partial ranges like `<i>abc`.
 
 With these methods we can do basically anything with selected nodes.
 
@@ -325,7 +320,7 @@ alert(document.getSelection())
 
 As said, a selection may in theory contain multiple ranges. We can get these range objects using the method:
 
--   `getRangeAt(i)` – get i-th range, starting from `0`. In all browsers except Firefox, only `0` is used.
+- `getRangeAt(i)` – get i-th range, starting from `0`. In all browsers except Firefox, only `0` is used.
 
 Also, there exist properties that often provide better convenience.
 
@@ -333,12 +328,12 @@ Similar to a range, a selection object has a start, called “anchor”, and the
 
 The main selection properties are:
 
--   `anchorNode` – the node where the selection starts,
--   `anchorOffset` – the offset in `anchorNode` where the selection starts,
--   `focusNode` – the node where the selection ends,
--   `focusOffset` – the offset in `focusNode` where the selection ends,
--   `isCollapsed` – `true` if selection selects nothing (empty range), or doesn’t exist.
--   `rangeCount` – count of ranges in the selection, maximum `1` in all browsers except Firefox.
+- `anchorNode` – the node where the selection starts,
+- `anchorOffset` – the offset in `anchorNode` where the selection starts,
+- `focusNode` – the node where the selection ends,
+- `focusOffset` – the offset in `focusNode` where the selection ends,
+- `isCollapsed` – `true` if selection selects nothing (empty range), or doesn’t exist.
+- `rangeCount` – count of ranges in the selection, maximum `1` in all browsers except Firefox.
 
 <span class="important__type">Selection end/start vs Range</span>
 
@@ -364,10 +359,10 @@ E.g. if the user starts selecting with mouse and goes from “Example” to “i
 
 There are events on to keep track of selection:
 
--   `elem.onselectstart` – when a selection *starts* specifically on element `elem` (or inside it). For instance, when the user presses the mouse button on it and starts to move the pointer.
-    -   Preventing the default action cancels the selection start. So starting a selection from this element becomes impossible, but the element is still selectable. The visitor just needs to start the selection from elsewhere.
--   `document.onselectionchange` – whenever a selection changes or starts.
-    -   Please note: this handler can be set only on `document`, it tracks all selections in it.
+- `elem.onselectstart` – when a selection _starts_ specifically on element `elem` (or inside it). For instance, when the user presses the mouse button on it and starts to move the pointer.
+  - Preventing the default action cancels the selection start. So starting a selection from this element becomes impossible, but the element is still selectable. The visitor just needs to start the selection from elsewhere.
+- `document.onselectionchange` – whenever a selection changes or starts.
+  - Please note: this handler can be set only on `document`, it tracks all selections in it.
 
 ### <a href="#selection-tracking-demo" id="selection-tracking-demo" class="main__anchor">Selection tracking demo</a>
 
@@ -431,23 +426,23 @@ Here’s the demo of copying the selected content both as text and as DOM nodes:
 
 We can work with the selection by addding/removing ranges:
 
--   `getRangeAt(i)` – get i-th range, starting from `0`. In all browsers except Firefox, only `0` is used.
--   `addRange(range)` – add `range` to selection. All browsers except Firefox ignore the call, if the selection already has an associated range.
--   `removeRange(range)` – remove `range` from the selection.
--   `removeAllRanges()` – remove all ranges.
--   `empty()` – alias to `removeAllRanges`.
+- `getRangeAt(i)` – get i-th range, starting from `0`. In all browsers except Firefox, only `0` is used.
+- `addRange(range)` – add `range` to selection. All browsers except Firefox ignore the call, if the selection already has an associated range.
+- `removeRange(range)` – remove `range` from the selection.
+- `removeAllRanges()` – remove all ranges.
+- `empty()` – alias to `removeAllRanges`.
 
 There are also convenience methods to manipulate the selection range directly, without intermediate `Range` calls:
 
--   `collapse(node, offset)` – replace selected range with a new one that starts and ends at the given `node`, at position `offset`.
--   `setPosition(node, offset)` – alias to `collapse`.
--   `collapseToStart()` – collapse (replace with an empty range) to selection start,
--   `collapseToEnd()` – collapse to selection end,
--   `extend(node, offset)` – move focus of the selection to the given `node`, position `offset`,
--   `setBaseAndExtent(anchorNode, anchorOffset, focusNode, focusOffset)` – replace selection range with the given start `anchorNode/anchorOffset` and end `focusNode/focusOffset`. All content in-between them is selected.
--   `selectAllChildren(node)` – select all children of the `node`.
--   `deleteFromDocument()` – remove selected content from the document.
--   `containsNode(node, allowPartialContainment = false)` – checks whether the selection contains `node` (partially if the second argument is `true`)
+- `collapse(node, offset)` – replace selected range with a new one that starts and ends at the given `node`, at position `offset`.
+- `setPosition(node, offset)` – alias to `collapse`.
+- `collapseToStart()` – collapse (replace with an empty range) to selection start,
+- `collapseToEnd()` – collapse to selection end,
+- `extend(node, offset)` – move focus of the selection to the given `node`, position `offset`,
+- `setBaseAndExtent(anchorNode, anchorOffset, focusNode, focusOffset)` – replace selection range with the given start `anchorNode/anchorOffset` and end `focusNode/focusOffset`. All content in-between them is selected.
+- `selectAllChildren(node)` – select all children of the `node`.
+- `deleteFromDocument()` – remove selected content from the document.
+- `containsNode(node, allowPartialContainment = false)` – checks whether the selection contains `node` (partially if the second argument is `true`)
 
 For most tasks these methods are just fine, there’s no need to access the underlying `Range` object.
 
@@ -492,30 +487,30 @@ Form elements, such as `input` and `textarea` provide [special API for selection
 
 Properties:
 
--   `input.selectionStart` – position of selection start (writeable),
--   `input.selectionEnd` – position of selection end (writeable),
--   `input.selectionDirection` – selection direction, one of: “forward”, “backward” or “none” (if e.g. selected with a double mouse click),
+- `input.selectionStart` – position of selection start (writeable),
+- `input.selectionEnd` – position of selection end (writeable),
+- `input.selectionDirection` – selection direction, one of: “forward”, “backward” or “none” (if e.g. selected with a double mouse click),
 
 Events:
 
--   `input.onselect` – triggers when something is selected.
+- `input.onselect` – triggers when something is selected.
 
 Methods:
 
--   `input.select()` – selects everything in the text control (can be `textarea` instead of `input`),
+- `input.select()` – selects everything in the text control (can be `textarea` instead of `input`),
 
--   `input.setSelectionRange(start, end, [direction])` – change the selection to span from position `start` till `end`, in the given direction (optional).
+- `input.setSelectionRange(start, end, [direction])` – change the selection to span from position `start` till `end`, in the given direction (optional).
 
--   `input.setRangeText(replacement, [start], [end], [selectionMode])` – replace a range of text with the new text.
+- `input.setRangeText(replacement, [start], [end], [selectionMode])` – replace a range of text with the new text.
 
-    Optional arguments `start` and `end`, if provided, set the range start and end, otherwise user selection is used.
+  Optional arguments `start` and `end`, if provided, set the range start and end, otherwise user selection is used.
 
-    The last argument, `selectionMode`, determines how the selection will be set after the text has been replaced. The possible values are:
+  The last argument, `selectionMode`, determines how the selection will be set after the text has been replaced. The possible values are:
 
-    -   `"select"` – the newly inserted text will be selected.
-    -   `"start"` – the selection range collapses just before the inserted text (the cursor will be immediately before it).
-    -   `"end"` – the selection range collapses just after the inserted text (the cursor will be right after it).
-    -   `"preserve"` – attempts to preserve the selection. This is the default.
+  - `"select"` – the newly inserted text will be selected.
+  - `"start"` – the selection range collapses just before the inserted text (the cursor will be immediately before it).
+  - `"end"` – the selection range collapses just after the inserted text (the cursor will be right after it).
+  - `"preserve"` – attempts to preserve the selection. This is the default.
 
 Now let’s see these methods in action.
 
@@ -542,8 +537,8 @@ For example, this code uses `onselect` event to track selection:
 
 Please note:
 
--   `onselect` triggers when something is selected, but not when the selection is removed.
--   `document.onselectionchange` event should not trigger for selections inside a form control, according to the [spec](https://w3c.github.io/selection-api/#dfn-selectionchange), as it’s not related to `document` selection and ranges. Some browsers generate it, but we shouldn’t rely on it.
+- `onselect` triggers when something is selected, but not when the selection is removed.
+- `document.onselectionchange` event should not trigger for selections inside a form control, according to the [spec](https://w3c.github.io/selection-api/#dfn-selectionchange), as it’s not related to `document` selection and ranges. Some browsers generate it, but we shouldn’t rely on it.
 
 ### <a href="#example-moving-cursor" id="example-moving-cursor" class="main__anchor">Example: moving cursor</a>
 
@@ -684,9 +679,9 @@ To make something unselectable, there are three ways:
 
 ## <a href="#references" id="references" class="main__anchor">References</a>
 
--   [DOM spec: Range](https://dom.spec.whatwg.org/#ranges)
--   [Selection API](https://www.w3.org/TR/selection-api/#dom-globaleventhandlers-onselectstart)
--   [HTML spec: APIs for the text control selections](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection)
+- [DOM spec: Range](https://dom.spec.whatwg.org/#ranges)
+- [Selection API](https://www.w3.org/TR/selection-api/#dom-globaleventhandlers-onselectstart)
+- [HTML spec: APIs for the text control selections](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection)
 
 ## <a href="#summary" id="summary" class="main__anchor">Summary</a>
 
@@ -700,7 +695,7 @@ The second API is very simple, as it works with text.
 The most used recipes are probably:
 
 1.  Getting the selection:
-        let selection = document.getSelection();
+    let selection = document.getSelection();
 
         let cloned = /* element to clone the selected nodes to */;
 
@@ -709,8 +704,9 @@ The most used recipes are probably:
         for (let i = 0; i < selection.rangeCount; i++) {
           cloned.append(selection.getRangeAt(i).cloneContents());
         }
+
 2.  Setting the selection:
-        let selection = document.getSelection();
+    let selection = document.getSelection();
 
         // directly:
         selection.setBaseAndExtent(...from...to...);
@@ -731,32 +727,32 @@ And finally, about the cursor. The cursor position in editable elements, like `<
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/ui-misc" class="sidebar__link">Miscellaneous</a>
+- <a href="/ui-misc" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
--   <a href="#range" class="sidebar__link">Range</a>
--   <a href="#range-properties" class="sidebar__link">Range properties</a>
--   <a href="#range-selection-methods" class="sidebar__link">Range selection methods</a>
--   <a href="#range-editing-methods" class="sidebar__link">Range editing methods</a>
--   <a href="#selection" class="sidebar__link">Selection</a>
--   <a href="#selection-properties" class="sidebar__link">Selection properties</a>
--   <a href="#selection-events" class="sidebar__link">Selection events</a>
--   <a href="#selection-methods" class="sidebar__link">Selection methods</a>
--   <a href="#selection-in-form-controls" class="sidebar__link">Selection in form controls</a>
--   <a href="#making-unselectable" class="sidebar__link">Making unselectable</a>
--   <a href="#references" class="sidebar__link">References</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#range" class="sidebar__link">Range</a>
+- <a href="#range-properties" class="sidebar__link">Range properties</a>
+- <a href="#range-selection-methods" class="sidebar__link">Range selection methods</a>
+- <a href="#range-editing-methods" class="sidebar__link">Range editing methods</a>
+- <a href="#selection" class="sidebar__link">Selection</a>
+- <a href="#selection-properties" class="sidebar__link">Selection properties</a>
+- <a href="#selection-events" class="sidebar__link">Selection events</a>
+- <a href="#selection-methods" class="sidebar__link">Selection methods</a>
+- <a href="#selection-in-form-controls" class="sidebar__link">Selection in form controls</a>
+- <a href="#making-unselectable" class="sidebar__link">Making unselectable</a>
+- <a href="#references" class="sidebar__link">References</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -764,8 +760,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/99-ui-misc/02-selection-range" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

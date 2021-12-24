@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fstyles-and-classes" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fstyles-and-classes" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/ui" class="breadcrumbs__link"><span>Browser: Document, Events, Interfaces</span></a></span>
@@ -93,9 +88,9 @@ So we can operate both on the full class string using `className` or on individu
 
 Methods of `classList`:
 
--   `elem.classList.add/remove("class")` – adds/removes the class.
--   `elem.classList.toggle("class")` – adds the class if it doesn’t exist, otherwise removes it.
--   `elem.classList.contains("class")` – checks for the given class, returns `true/false`.
+- `elem.classList.add/remove("class")` – adds/removes the class.
+- `elem.classList.toggle("class")` – adds the class if it doesn’t exist, otherwise removes it.
+- `elem.classList.contains("class")` – checks for the given class, returns `true/false`.
 
 Besides, `classList` is iterable, so we can list all classes with `for..of`, like this:
 
@@ -213,7 +208,7 @@ Please note: the browser “unpacks” the property `style.margin` in the last l
 
 ## <a href="#computed-styles-getcomputedstyle" id="computed-styles-getcomputedstyle" class="main__anchor">Computed styles: getComputedStyle</a>
 
-So, modifying a style is easy. But how to *read* it?
+So, modifying a style is easy. But how to _read_ it?
 
 For instance, we want to know the size, margins, the color of an element. How to do it?
 
@@ -281,8 +276,8 @@ For instance:
 
 There are two concepts in [CSS](https://drafts.csswg.org/cssom/#resolved-values):
 
-1.  A *computed* style value is the value after all CSS rules and CSS inheritance is applied, as the result of the CSS cascade. It can look like `height:1em` or `font-size:125%`.
-2.  A *resolved* style value is the one finally applied to the element. Values like `1em` or `125%` are relative. The browser takes the computed value and makes all units fixed and absolute, for instance: `height:20px` or `font-size:16px`. For geometry properties resolved values may have a floating point, like `width:50.5px`.
+1.  A _computed_ style value is the value after all CSS rules and CSS inheritance is applied, as the result of the CSS cascade. It can look like `height:1em` or `font-size:125%`.
+2.  A _resolved_ style value is the one finally applied to the element. Values like `1em` or `125%` are relative. The browser takes the computed value and makes all units fixed and absolute, for instance: `height:20px` or `font-size:16px`. For geometry properties resolved values may have a floating point, like `width:50.5px`.
 
 A long time ago `getComputedStyle` was created to get computed values, but it turned out that resolved values are much more convenient, and the standard changed.
 
@@ -322,18 +317,18 @@ JavaScript may not see the styles applied by `:visited`. And also, there’s a l
 
 To manage classes, there are two DOM properties:
 
--   `className` – the string value, good to manage the whole set of classes.
--   `classList` – the object with methods `add/remove/toggle/contains`, good for individual classes.
+- `className` – the string value, good to manage the whole set of classes.
+- `classList` – the object with methods `add/remove/toggle/contains`, good for individual classes.
 
 To change the styles:
 
--   The `style` property is an object with camelCased styles. Reading and writing to it has the same meaning as modifying individual properties in the `"style"` attribute. To see how to apply `important` and other rare stuff – there’s a list of methods at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration).
+- The `style` property is an object with camelCased styles. Reading and writing to it has the same meaning as modifying individual properties in the `"style"` attribute. To see how to apply `important` and other rare stuff – there’s a list of methods at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration).
 
--   The `style.cssText` property corresponds to the whole `"style"` attribute, the full string of styles.
+- The `style.cssText` property corresponds to the whole `"style"` attribute, the full string of styles.
 
 To read the resolved styles (with respect to all classes, after all CSS is applied and final values are calculated):
 
--   The `getComputedStyle(elem, [pseudo])` returns the style-like object with them. Read-only.
+- The `getComputedStyle(elem, [pseudo])` returns the style-like object with them. Read-only.
 
 ## <a href="#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -375,27 +370,27 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/document" class="sidebar__link">Document</a>
+- <a href="/document" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
--   <a href="#classname-and-classlist" class="sidebar__link">className and classList</a>
--   <a href="#element-style" class="sidebar__link">Element style</a>
--   <a href="#resetting-the-style-property" class="sidebar__link">Resetting the style property</a>
--   <a href="#mind-the-units" class="sidebar__link">Mind the units</a>
--   <a href="#computed-styles-getcomputedstyle" class="sidebar__link">Computed styles: getComputedStyle</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#classname-and-classlist" class="sidebar__link">className and classList</a>
+- <a href="#element-style" class="sidebar__link">Element style</a>
+- <a href="#resetting-the-style-property" class="sidebar__link">Resetting the style property</a>
+- <a href="#mind-the-units" class="sidebar__link">Mind the units</a>
+- <a href="#computed-styles-getcomputedstyle" class="sidebar__link">Computed styles: getComputedStyle</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (1)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (1)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -403,8 +398,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/08-styles-and-classes" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

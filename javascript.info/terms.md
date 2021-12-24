@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fterms" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fterms" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 # Terms of Usage
 
@@ -47,10 +47,10 @@ Unless otherwise stated, we and/or and/or our licensors own the intellectual pro
 
 Unless otherwise stated, you must not:
 
--   Republish material from https://javascript.info
--   Sell, rent or sub-license material from https://javascript.info
--   Reproduce, duplicate or copy material from https://javascript.info
--   Redistribute content from javascript.info (unless content is specifically made for redistribution).
+- Republish material from https://javascript.info
+- Sell, rent or sub-license material from https://javascript.info
+- Reproduce, duplicate or copy material from https://javascript.info
+- Redistribute content from javascript.info (unless content is specifically made for redistribution).
 
 The Modern JavaScript Tutorial text is a notable exception. It is licensed as CC-BY-NC-SA (see https://github.com/javascript-tutorial/en. javascript.info/blob/master/LICENSE.md) for details, So it is possible to republish it while obeying the terms of the license. Note that if you republish it on your site, you need to put a link to the original version and don’t put ads (non-commercially).
 
@@ -58,10 +58,10 @@ Certain parts of this website offer the opportunity for users to post and exchan
 
 You warrant and represent that:
 
--   You are entitled to post User Content on our website and have all necessary licenses and consents to do so;
--   The User Content do not infringe any intellectual property right, including without limitation copyright, patent or trademark, or other proprietary right of any third party;
--   The User Content do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material or material which is an invasion of privacy
--   The User Content will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.
+- You are entitled to post User Content on our website and have all necessary licenses and consents to do so;
+- The User Content do not infringe any intellectual property right, including without limitation copyright, patent or trademark, or other proprietary right of any third party;
+- The User Content do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material or material which is an invasion of privacy
+- The User Content will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.
 
 You hereby grant Us a non-exclusive royalty-free license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.
 
@@ -69,10 +69,10 @@ To the maximum extent permitted by applicable law, we exclude all representation
 
 Nothing in this disclaimer will:
 
--   limit or exclude our or your liability for death or personal injury resulting from negligence;
--   limit or exclude our or your liability for fraud or fraudulent misrepresentation;
--   limit any of our or your liabilities in any way that is not permitted under applicable law; or
--   exclude any of our or your liabilities that may not be excluded under applicable law.
+- limit or exclude our or your liability for death or personal injury resulting from negligence;
+- limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+- limit any of our or your liabilities in any way that is not permitted under applicable law; or
+- exclude any of our or your liabilities that may not be excluded under applicable law.
 
 The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort (including negligence) and for breach of statutory duty. To the extent that the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.
 
@@ -80,27 +80,27 @@ This sites makes use of Disqus for comments. It has a separate user authenticati
 
 ## Ebook Terms and Conditions
 
--   eBook titles purchased cannot be returned, printed, refunded, or exchanged.
--   If you experience technical difficulty in downloading or accessing a title, please contact us at <help@javascript.info> for assistance.
--   You are permitted to download the eBook but this licence is personal to you, non-exclusive and non-transferrable.
--   You may reproduce and store portions of the eBook content for your personal use.
--   Full-scale reproduction of the contents of the eBook is expressly prohibited.
--   You may not use the eBook on more than one computer system concurrently, make or distribute unauthorised copies of the eBook, or use, copy, modify, or transfer the eBook, in whole or in part, unless you receive our express permission.
--   If you transfer possession of the eBook to a third party, the licence is automatically terminated.
--   You are granted the right to download the eBook
--   you may print pages of the eBook for your personal use and reference in connection with your work.
--   You may create and save bookmarks, highlights and notes as provided by the functionality of the program.
--   You agree to protect the eBook from unauthorised use, reproduction, or distribution.
--   You further agree not to translate, decompile, or disassemble the eBook except to the extent permitted under applicable law.
--   Multi-use configurations or network distribution of the eBook is expressly prohibited.
+- eBook titles purchased cannot be returned, printed, refunded, or exchanged.
+- If you experience technical difficulty in downloading or accessing a title, please contact us at <help@javascript.info> for assistance.
+- You are permitted to download the eBook but this licence is personal to you, non-exclusive and non-transferrable.
+- You may reproduce and store portions of the eBook content for your personal use.
+- Full-scale reproduction of the contents of the eBook is expressly prohibited.
+- You may not use the eBook on more than one computer system concurrently, make or distribute unauthorised copies of the eBook, or use, copy, modify, or transfer the eBook, in whole or in part, unless you receive our express permission.
+- If you transfer possession of the eBook to a third party, the licence is automatically terminated.
+- You are granted the right to download the eBook
+- you may print pages of the eBook for your personal use and reference in connection with your work.
+- You may create and save bookmarks, highlights and notes as provided by the functionality of the program.
+- You agree to protect the eBook from unauthorised use, reproduction, or distribution.
+- You further agree not to translate, decompile, or disassemble the eBook except to the extent permitted under applicable law.
+- Multi-use configurations or network distribution of the eBook is expressly prohibited.
 
 Additionally, the contents of the eBook is published under CC-BY-NC-SA license, see <https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode>.
 
 In short, you may distribute, adapt and reuse it under following conditions:
 
--   Attribution: write about the main author of the original code (Ilya Kantor) and this licence, make a link to our website.
--   Noncommercial use only.
--   Your works based on this code must use the same license.
+- Attribution: write about the main author of the original code (Ilya Kantor) and this licence, make a link to our website.
+- Noncommercial use only.
+- Your works based on this code must use the same license.
 
 ## Disclaimer
 
@@ -110,8 +110,8 @@ The address of Kantor Ilya Aleksandrovich is Russia, 123423, Moscow, Narodnogo O
 
 To contact, please mail to <help@javascript.info>, or call +79035419441, Ilya.
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

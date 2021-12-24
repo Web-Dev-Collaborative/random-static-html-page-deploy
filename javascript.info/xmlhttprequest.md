@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/xmlhttprequest" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fxmlhttprequest" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fxmlhttprequest" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/network" class="breadcrumbs__link"><span>Network requests</span></a></span>
@@ -74,10 +74,10 @@ To do the request, we need 3 steps:
 
     This method specifies the main parameters of the request:
 
-    -   `method` – HTTP-method. Usually `"GET"` or `"POST"`.
-    -   `URL` – the URL to request, a string, can be [URL](/url) object.
-    -   `async` – if explicitly set to `false`, then the request is synchronous, we’ll cover that a bit later.
-    -   `user`, `password` – login and password for basic HTTP auth (if required).
+    - `method` – HTTP-method. Usually `"GET"` or `"POST"`.
+    - `URL` – the URL to request, a string, can be [URL](/url) object.
+    - `async` – if explicitly set to `false`, then the request is synchronous, we’ll cover that a bit later.
+    - `user`, `password` – login and password for basic HTTP auth (if required).
 
     Please note that `open` call, contrary to its name, does not open the connection. It only configures the request, but the network activity only starts with the call of `send`.
 
@@ -93,24 +93,24 @@ To do the request, we need 3 steps:
 
     These three events are the most widely used:
 
-    -   `load` – when the request is complete (even if HTTP status is like 400 or 500), and the response is fully downloaded.
-    -   `error` – when the request couldn’t be made, e.g. network down or invalid URL.
-    -   `progress` – triggers periodically while the response is being downloaded, reports how much has been downloaded.
+    - `load` – when the request is complete (even if HTTP status is like 400 or 500), and the response is fully downloaded.
+    - `error` – when the request couldn’t be made, e.g. network down or invalid URL.
+    - `progress` – triggers periodically while the response is being downloaded, reports how much has been downloaded.
 
-        xhr.onload = function() {
-          alert(`Loaded: ${xhr.status} ${xhr.response}`);
-        };
+      xhr.onload = function() {
+      alert(`Loaded: ${xhr.status} ${xhr.response}`);
+      };
 
-        xhr.onerror = function() { // only triggers if the request couldn't be made at all
-          alert(`Network Error`);
-        };
+      xhr.onerror = function() { // only triggers if the request couldn't be made at all
+      alert(`Network Error`);
+      };
 
-        xhr.onprogress = function(event) { // triggers periodically
-          // event.loaded - how many bytes downloaded
-          // event.lengthComputable = true if the server sent Content-Length header
-          // event.total - total number of bytes (if lengthComputable)
-          alert(`Received ${event.loaded} of ${event.total}`);
-        };
+      xhr.onprogress = function(event) { // triggers periodically
+      // event.loaded - how many bytes downloaded
+      // event.lengthComputable = true if the server sent Content-Length header
+      // event.total - total number of bytes (if lengthComputable)
+      alert(`Received ${event.loaded} of ${event.total}`);
+      };
 
 Here’s a full example. The code below loads the URL at `/article/xmlhttprequest/example/load` from the server and prints the progress:
 
@@ -180,12 +180,12 @@ To add parameters to URL, like `?name=value`, and ensure the proper encoding, we
 
 We can use `xhr.responseType` property to set the response format:
 
--   `""` (default) – get as string,
--   `"text"` – get as string,
--   `"arraybuffer"` – get as `ArrayBuffer` (for binary data, see chapter [ArrayBuffer, binary arrays](/arraybuffer-binary-arrays)),
--   `"blob"` – get as `Blob` (for binary data, see chapter [Blob](/blob)),
--   `"document"` – get as XML document (can use XPath and other XML methods) or HTML document (based on the MIME type of the received data),
--   `"json"` – get as JSON (parsed automatically).
+- `""` (default) – get as string,
+- `"text"` – get as string,
+- `"arraybuffer"` – get as `ArrayBuffer` (for binary data, see chapter [ArrayBuffer, binary arrays](/arraybuffer-binary-arrays)),
+- `"blob"` – get as `Blob` (for binary data, see chapter [Blob](/blob)),
+- `"document"` – get as XML document (can use XPath and other XML methods) or HTML document (based on the MIME type of the received data),
+- `"json"` – get as JSON (parsed automatically).
 
 For example, let’s get the response as JSON:
 
@@ -292,7 +292,7 @@ For instance:
 
 <span class="important__type">Headers limitations</span>
 
-Several headers are managed exclusively by the browser, e.g. `Referer` and `Host`. The full list is [in the specification](https://xhr.spec.whatwg.org/#the-setrequestheader()-method).
+Several headers are managed exclusively by the browser, e.g. `Referer` and `Host`. The full list is [in the specification](<https://xhr.spec.whatwg.org/#the-setrequestheader()-method>).
 
 `XMLHttpRequest` is not allowed to change them, for the sake of user safety and correctness of the request.
 
@@ -416,13 +416,13 @@ There’s another object, without methods, exclusively to track upload events: `
 
 It generates events, similar to `xhr`, but `xhr.upload` triggers them solely on uploading:
 
--   `loadstart` – upload started.
--   `progress` – triggers periodically during the upload.
--   `abort` – upload aborted.
--   `error` – non-HTTP error.
--   `load` – upload finished successfully.
--   `timeout` – upload timed out (if `timeout` property is set).
--   `loadend` – upload finished with either success or error.
+- `loadstart` – upload started.
+- `progress` – triggers periodically during the upload.
+- `abort` – upload aborted.
+- `error` – non-HTTP error.
+- `load` – upload finished successfully.
+- `timeout` – upload timed out (if `timeout` property is set).
+- `loadend` – upload finished with either success or error.
 
 Example of handlers:
 
@@ -514,13 +514,13 @@ Typical code of the GET-request with `XMLHttpRequest`:
 
 There are actually more events, the [modern specification](https://xhr.spec.whatwg.org/#events) lists them (in the lifecycle order):
 
--   `loadstart` – the request has started.
--   `progress` – a data packet of the response has arrived, the whole response body at the moment is in `response`.
--   `abort` – the request was canceled by the call `xhr.abort()`.
--   `error` – connection error has occurred, e.g. wrong domain name. Doesn’t happen for HTTP-errors like 404.
--   `load` – the request has finished successfully.
--   `timeout` – the request was canceled due to timeout (only happens if it was set).
--   `loadend` – triggers after `load`, `error`, `timeout` or `abort`.
+- `loadstart` – the request has started.
+- `progress` – a data packet of the response has arrived, the whole response body at the moment is in `response`.
+- `abort` – the request was canceled by the call `xhr.abort()`.
+- `error` – connection error has occurred, e.g. wrong domain name. Doesn’t happen for HTTP-errors like 404.
+- `load` – the request has finished successfully.
+- `timeout` – the request was canceled due to timeout (only happens if it was set).
+- `loadend` – triggers after `load`, `error`, `timeout` or `abort`.
 
 The `error`, `abort`, `timeout`, and `load` events are mutually exclusive. Only one of them may happen.
 
@@ -540,30 +540,30 @@ If we need to track uploading specifically, then we should listen to same events
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/network" class="sidebar__link">Network requests</a>
+- <a href="/network" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
--   <a href="#the-basics" class="sidebar__link">The basics</a>
--   <a href="#response-type" class="sidebar__link">Response Type</a>
--   <a href="#ready-states" class="sidebar__link">Ready states</a>
--   <a href="#aborting-request" class="sidebar__link">Aborting request</a>
--   <a href="#synchronous-requests" class="sidebar__link">Synchronous requests</a>
--   <a href="#http-headers" class="sidebar__link">HTTP-headers</a>
--   <a href="#post-formdata" class="sidebar__link">POST, FormData</a>
--   <a href="#upload-progress" class="sidebar__link">Upload progress</a>
--   <a href="#cross-origin-requests" class="sidebar__link">Cross-origin requests</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#the-basics" class="sidebar__link">The basics</a>
+- <a href="#response-type" class="sidebar__link">Response Type</a>
+- <a href="#ready-states" class="sidebar__link">Ready states</a>
+- <a href="#aborting-request" class="sidebar__link">Aborting request</a>
+- <a href="#synchronous-requests" class="sidebar__link">Synchronous requests</a>
+- <a href="#http-headers" class="sidebar__link">HTTP-headers</a>
+- <a href="#post-formdata" class="sidebar__link">POST, FormData</a>
+- <a href="#upload-progress" class="sidebar__link">Upload progress</a>
+- <a href="#cross-origin-requests" class="sidebar__link">Cross-origin requests</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -571,8 +571,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/08-xmlhttprequest" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

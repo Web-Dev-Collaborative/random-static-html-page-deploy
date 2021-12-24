@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fsize-and-scroll" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fsize-and-scroll" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/ui" class="breadcrumbs__link"><span>Browser: Document, Events, Interfaces</span></a></span>
@@ -125,8 +120,8 @@ These two properties are the simplest ones. They provide the “outer” width/h
 
 For our sample element:
 
--   `offsetWidth = 390` – the outer width, can be calculated as inner CSS-width (`300px`) plus paddings (`2 * 20px`) and borders (`2 * 25px`).
--   `offsetHeight = 290` – the outer height.
+- `offsetWidth = 390` – the outer width, can be calculated as inner CSS-width (`300px`) plus paddings (`2 * 20px`) and borders (`2 * 25px`).
+- `offsetHeight = 290` – the outer height.
 
 <span class="important__type">Geometry properties are zero/null for elements that are not displayed</span>
 
@@ -152,8 +147,8 @@ To measure them, there are properties `clientTop` and `clientLeft`.
 
 In our example:
 
--   `clientLeft = 25` – left border width
--   `clientTop = 25` – top border width
+- `clientLeft = 25` – left border width
+- `clientTop = 25` – top border width
 
 <figure><img src="/article/size-and-scroll/metric-client-left-top.svg" width="353" height="316" /></figure>
 
@@ -197,8 +192,8 @@ These properties are like `clientWidth/clientHeight`, but they also include the 
 
 On the picture above:
 
--   `scrollHeight = 723` – is the full inner height of the content area including the scrolled out parts.
--   `scrollWidth = 324` – is the full inner width, here we have no horizontal scroll, so it equals `clientWidth`.
+- `scrollHeight = 723` – is the full inner height of the content area including the scrolled out parts.
+- `scrollWidth = 324` – is the full inner width, here we have no horizontal scroll, so it equals `clientWidth`.
 
 We can use these properties to expand the element wide to its full width/height.
 
@@ -277,7 +272,7 @@ Why should we use geometry properties instead? There are two reasons:
 
     From the CSS standpoint, `width:auto` is perfectly normal, but in JavaScript we need an exact size in `px` that we can use in calculations. So here CSS width is useless.
 
-And there’s one more reason: a scrollbar. Sometimes the code that works fine without a scrollbar becomes buggy with it, because a scrollbar takes the space from the content in some browsers. So the real width available for the content is *less* than CSS width. And `clientWidth/clientHeight` take that into account.
+And there’s one more reason: a scrollbar. Sometimes the code that works fine without a scrollbar becomes buggy with it, because a scrollbar takes the space from the content in some browsers. So the real width available for the content is _less_ than CSS width. And `clientWidth/clientHeight` take that into account.
 
 …But with `getComputedStyle(elem).width` the situation is different. Some browsers (e.g. Chrome) return the real inner width, minus the scrollbar, and some of them (e.g. Firefox) – CSS width (ignore the scrollbar). Such cross-browser differences is the reason not to use `getComputedStyle`, but rather rely on geometry properties.
 
@@ -287,7 +282,7 @@ If your browser reserves the space for a scrollbar (most browsers for Windows do
 
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
 
-The element has `style="width:300px"`  
+The element has `style="width:300px"`
 
 alert( getComputedStyle(elem).width )
 
@@ -301,13 +296,13 @@ Please note that the described difference is only about reading `getComputedStyl
 
 Elements have the following geometry properties:
 
--   `offsetParent` – is the nearest positioned ancestor or `td`, `th`, `table`, `body`.
--   `offsetLeft/offsetTop` – coordinates relative to the upper-left edge of `offsetParent`.
--   `offsetWidth/offsetHeight` – “outer” width/height of an element including borders.
--   `clientLeft/clientTop` – the distances from the upper-left outer corner to the upper-left inner (content + padding) corner. For left-to-right OS they are always the widths of left/top borders. For right-to-left OS the vertical scrollbar is on the left so `clientLeft` includes its width too.
--   `clientWidth/clientHeight` – the width/height of the content including paddings, but without the scrollbar.
--   `scrollWidth/scrollHeight` – the width/height of the content, just like `clientWidth/clientHeight`, but also include scrolled-out, invisible part of the element.
--   `scrollLeft/scrollTop` – width/height of the scrolled out upper part of the element, starting from its upper-left corner.
+- `offsetParent` – is the nearest positioned ancestor or `td`, `th`, `table`, `body`.
+- `offsetLeft/offsetTop` – coordinates relative to the upper-left edge of `offsetParent`.
+- `offsetWidth/offsetHeight` – “outer” width/height of an element including borders.
+- `clientLeft/clientTop` – the distances from the upper-left outer corner to the upper-left inner (content + padding) corner. For left-to-right OS they are always the widths of left/top borders. For right-to-left OS the vertical scrollbar is on the left so `clientLeft` includes its width too.
+- `clientWidth/clientHeight` – the width/height of the content including paddings, but without the scrollbar.
+- `scrollWidth/scrollHeight` – the width/height of the content, just like `clientWidth/clientHeight`, but also include scrolled-out, invisible part of the element.
+- `scrollLeft/scrollTop` – width/height of the scrolled out upper part of the element, starting from its upper-left corner.
 
 All properties are read-only except `scrollLeft/scrollTop` that make the browser scroll the element if changed.
 
@@ -390,8 +385,8 @@ Calculate them and use to place the ball into the center of the green field:
 
 <img src="https://en.js.cx/clipart/ball.svg" id="ball" width="40" height="40" /> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
--   The element should be moved by JavaScript, not CSS.
--   The code should work with any ball size (`10`, `20`, `30` pixels) and any field size, not be bound to the given values.
+- The element should be moved by JavaScript, not CSS.
+- The code should work with any ball size (`10`, `20`, `30` pixels) and any field size, not be bound to the given values.
 
 P.S. Sure, centering could be done with CSS, but here we want exactly JavaScript. Further we’ll meet other topics and more complex situations when JavaScript must be used. Here we do a “warm-up”.
 
@@ -464,7 +459,7 @@ Differences:
 
 1.  `clientWidth` is numeric, while `getComputedStyle(elem).width` returns a string with `px` at the end.
 2.  `getComputedStyle` may return non-numeric width like `"auto"` for an inline element.
-3.  `clientWidth` is the inner content area of the element plus paddings, while CSS width (with standard `box-sizing`) is the inner content area *without paddings*.
+3.  `clientWidth` is the inner content area of the element plus paddings, while CSS width (with standard `box-sizing`) is the inner content area _without paddings_.
 4.  If there’s a scrollbar and the browser reserves the space for it, some browser substract that space from CSS width (cause it’s not available for content any more), and some do not. The `clientWidth` property is always the same: scrollbar size is substracted if reserved.
 
 <a href="/styles-and-classes" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="/size-and-scroll-window" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
@@ -477,31 +472,31 @@ Differences:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/document" class="sidebar__link">Document</a>
+- <a href="/document" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
--   <a href="#sample-element" class="sidebar__link">Sample element</a>
--   <a href="#geometry" class="sidebar__link">Geometry</a>
--   <a href="#offsetparent-offsetleft-top" class="sidebar__link">offsetParent, offsetLeft/Top</a>
--   <a href="#offsetwidth-height" class="sidebar__link">offsetWidth/Height</a>
--   <a href="#clienttop-left" class="sidebar__link">clientTop/Left</a>
--   <a href="#clientwidth-height" class="sidebar__link">clientWidth/Height</a>
--   <a href="#scrollwidth-height" class="sidebar__link">scrollWidth/Height</a>
--   <a href="#scrollleft-scrolltop" class="sidebar__link">scrollLeft/scrollTop</a>
--   <a href="#don-t-take-width-height-from-css" class="sidebar__link">Don’t take width/height from CSS</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#sample-element" class="sidebar__link">Sample element</a>
+- <a href="#geometry" class="sidebar__link">Geometry</a>
+- <a href="#offsetparent-offsetleft-top" class="sidebar__link">offsetParent, offsetLeft/Top</a>
+- <a href="#offsetwidth-height" class="sidebar__link">offsetWidth/Height</a>
+- <a href="#clienttop-left" class="sidebar__link">clientTop/Left</a>
+- <a href="#clientwidth-height" class="sidebar__link">clientWidth/Height</a>
+- <a href="#scrollwidth-height" class="sidebar__link">scrollWidth/Height</a>
+- <a href="#scrollleft-scrolltop" class="sidebar__link">scrollLeft/scrollTop</a>
+- <a href="#don-t-take-width-height-from-css" class="sidebar__link">Don’t take width/height from CSS</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (4)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (4)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -509,8 +504,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/09-size-and-scroll" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Frest-parameters-spread" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Frest-parameters-spread" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/js" class="breadcrumbs__link"><span>The JavaScript language</span></a></span>
@@ -31,9 +26,9 @@ Many JavaScript built-in functions support an arbitrary number of arguments.
 
 For instance:
 
--   `Math.max(arg1, arg2, ..., argN)` – returns the greatest of the arguments.
--   `Object.assign(dest, src1, ..., srcN)` – copies properties from `src1..N` into `dest`.
--   …and so on.
+- `Math.max(arg1, arg2, ..., argN)` – returns the greatest of the arguments.
+- `Object.assign(dest, src1, ..., srcN)` – copies properties from `src1..N` into `dest`.
+- …and so on.
 
 In this chapter we’ll learn how to do the same. And also, how to pass arrays to such functions as parameters.
 
@@ -185,7 +180,7 @@ Passing it “as is” won’t work, because `Math.max` expects a list of numeri
 
 And surely we can’t manually list items in the code `Math.max(arr[0], arr[1], arr[2])`, because we may be unsure how many there are. As our script executes, there could be a lot, or there could be none. And that would get ugly.
 
-*Spread syntax* to the rescue! It looks similar to rest parameters, also using `...`, but does quite the opposite.
+_Spread syntax_ to the rescue! It looks similar to rest parameters, also using `...`, but does quite the opposite.
 
 When `...arr` is used in the function call, it “expands” an iterable object `arr` into the list of arguments.
 
@@ -265,8 +260,8 @@ The result is the same as `[...str]`.
 
 But there’s a subtle difference between `Array.from(obj)` and `[...obj]`:
 
--   `Array.from` operates on both array-likes and iterables.
--   The spread syntax works only with iterables.
+- `Array.from` operates on both array-likes and iterables.
+- The spread syntax works only with iterables.
 
 So, for the task of turning something into an array, `Array.from` tends to be more universal.
 
@@ -326,13 +321,13 @@ When we see `"..."` in the code, it is either rest parameters or the spread synt
 
 There’s an easy way to distinguish between them:
 
--   When `...` is at the end of function parameters, it’s “rest parameters” and gathers the rest of the list of arguments into an array.
--   When `...` occurs in a function call or alike, it’s called a “spread syntax” and expands an array into a list.
+- When `...` is at the end of function parameters, it’s “rest parameters” and gathers the rest of the list of arguments into an array.
+- When `...` occurs in a function call or alike, it’s called a “spread syntax” and expands an array into a list.
 
 Use patterns:
 
--   Rest parameters are used to create functions that accept any number of arguments.
--   The spread syntax is used to pass an array to functions that normally require a list of many arguments.
+- Rest parameters are used to create functions that accept any number of arguments.
+- The spread syntax is used to pass an array to functions that normally require a list of many arguments.
 
 Together they help to travel between a list and an array of parameters with ease.
 
@@ -348,25 +343,25 @@ All arguments of a function call are also available in “old-style” `argument
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/advanced-functions" class="sidebar__link">Advanced working with functions</a>
+- <a href="/advanced-functions" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
--   <a href="#rest-parameters" class="sidebar__link">Rest parameters <code>...</code></a>
--   <a href="#the-arguments-variable" class="sidebar__link">The “arguments” variable</a>
--   <a href="#spread-syntax" class="sidebar__link">Spread syntax</a>
--   <a href="#copy-an-array-object" class="sidebar__link">Copy an array/object</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#rest-parameters" class="sidebar__link">Rest parameters <code>...</code></a>
+- <a href="#the-arguments-variable" class="sidebar__link">The “arguments” variable</a>
+- <a href="#spread-syntax" class="sidebar__link">Spread syntax</a>
+- <a href="#copy-an-array-object" class="sidebar__link">Copy an array/object</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -374,8 +369,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/02-rest-parameters-spread" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

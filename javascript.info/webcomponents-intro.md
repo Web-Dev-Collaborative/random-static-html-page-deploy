@@ -1,19 +1,19 @@
 EN
 
--   <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
--   <a href="https://javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
--   <a href="https://es.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
--   <a href="https://fr.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
--   <a href="https://id.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
--   <a href="https://it.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
+- <a href="https://ar.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">AR</span><span class="supported-langs__title">عربي</span></a>
+- <a href="https://javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">EN</span><span class="supported-langs__title">English</span></a>
+- <a href="https://es.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ES</span><span class="supported-langs__title">Español</span></a>
+- <a href="https://fr.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">FR</span><span class="supported-langs__title">Français</span></a>
+- <a href="https://id.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ID</span><span class="supported-langs__title">Indonesia</span></a>
+- <a href="https://it.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">IT</span><span class="supported-langs__title">Italiano</span></a>
 
 <!-- -->
 
--   <a href="https://ja.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
--   <a href="https://ko.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
--   <a href="https://learn.javascript.ru/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
--   <a href="https://tr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
--   <a href="https://zh.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
+- <a href="https://ja.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">JA</span><span class="supported-langs__title">日本語</span></a>
+- <a href="https://ko.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">KO</span><span class="supported-langs__title">한국어</span></a>
+- <a href="https://learn.javascript.ru/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">RU</span><span class="supported-langs__title">Русский</span></a>
+- <a href="https://tr.javascript.info/" class="supported-langs__link"><span class="supported-langs__brief">TR</span><span class="supported-langs__title">Türkçe</span></a>
+- <a href="https://zh.javascript.info/webcomponents-intro" class="supported-langs__link"><span class="supported-langs__brief">ZH</span><span class="supported-langs__title">简体中文</span></a>
 
 We want to make this open-source project available for people all around the world.
 
@@ -31,7 +31,7 @@ Search
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fwebcomponents-intro" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fwebcomponents-intro" class="share share_fb"></a>
 
-عربيEnglishEspañolFrançaisIndonesiaItaliano日本語한국어РусскийTürkçe简体中文
+عربيEnglishEspañolFrançaisIndonesiaItaliano 日本語한국어РусскийTürkçe 简体中文
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/web-components" class="breadcrumbs__link"><span>Web components</span></a></span>
@@ -60,10 +60,10 @@ And this is how it’s made inside (approximately):
 
 The International Space Station:
 
--   Consists of many components.
--   Each component, in its turn, has many smaller details inside.
--   The components are very complex, much more complicated than most websites.
--   Components are developed internationally, by teams from different countries, speaking different languages.
+- Consists of many components.
+- Each component, in its turn, has many smaller details inside.
+- The components are very complex, much more complicated than most websites.
+- Components are developed internationally, by teams from different countries, speaking different languages.
 
 …And this thing flies, keeps humans alive in space!
 
@@ -99,10 +99,10 @@ How do we decide, what is a component? That comes from intuition, experience and
 
 A component has:
 
--   Its own JavaScript class.
--   DOM structure, managed solely by its class, outside code doesn’t access it (“encapsulation” principle).
--   CSS styles, applied to the component.
--   API: events, class methods etc, to interact with other components.
+- Its own JavaScript class.
+- DOM structure, managed solely by its class, outside code doesn’t access it (“encapsulation” principle).
+- CSS styles, applied to the component.
+- API: events, class methods etc, to interact with other components.
 
 Once again, the whole “component” thing is nothing special.
 
@@ -110,10 +110,10 @@ There exist many frameworks and development methodologies to build them, each wi
 
 “Web components” provide built-in browser capabilities for that, so we don’t have to emulate them any more.
 
--   [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) – to define custom HTML elements.
--   [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) – to create an internal DOM for the component, hidden from the others.
--   [CSS Scoping](https://drafts.csswg.org/css-scoping/) – to declare styles that only apply inside the Shadow DOM of the component.
--   [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
+- [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) – to define custom HTML elements.
+- [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) – to create an internal DOM for the component, hidden from the others.
+- [CSS Scoping](https://drafts.csswg.org/css-scoping/) – to declare styles that only apply inside the Shadow DOM of the component.
+- [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
 
 In the next chapter we’ll go into details of “Custom Elements” – the fundamental and well-supported feature of web components, good on its own.
 
@@ -127,22 +127,22 @@ In the next chapter we’ll go into details of “Custom Elements” – the fun
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/web-components" class="sidebar__link">Web components</a>
+- <a href="/web-components" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
--   <a href="#what-s-common-between" class="sidebar__link">What’s common between…</a>
--   <a href="#component-architecture" class="sidebar__link">Component architecture</a>
+- <a href="#what-s-common-between" class="sidebar__link">What’s common between…</a>
+- <a href="#component-architecture" class="sidebar__link">Component architecture</a>
 
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -150,8 +150,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/1-webcomponents-intro" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

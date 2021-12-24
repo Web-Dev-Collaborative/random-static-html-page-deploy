@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fsearching-elements-dom" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fsearching-elements-dom" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/ui" class="breadcrumbs__link"><span>Browser: Document, Events, Interfaces</span></a></span>
@@ -141,7 +136,7 @@ Pseudo-classes in the CSS selector like `:hover` and `:active` are also supporte
 
 The call to `elem.querySelector(css)` returns the first element for the given CSS selector.
 
-In other words, the result is the same as `elem.querySelectorAll(css)[0]`, but the latter is looking for *all* elements and picking one, while `elem.querySelector` just looks for one. So it’s faster and also shorter to write.
+In other words, the result is the same as `elem.querySelectorAll(css)[0]`, but the latter is looking for _all_ elements and picking one, while `elem.querySelector` just looks for one. So it’s faster and also shorter to write.
 
 ## <a href="#matches" id="matches" class="main__anchor">matches</a>
 
@@ -171,7 +166,7 @@ For instance:
 
 ## <a href="#closest" id="closest" class="main__anchor">closest</a>
 
-*Ancestors* of an element are: parent, the parent of parent, its parent and so on. The ancestors together form the chain of parents from the element to the top.
+_Ancestors_ of an element are: parent, the parent of parent, its parent and so on. The ancestors together form the chain of parents from the element to the top.
 
 The method `elem.closest(css)` looks for the nearest ancestor that matches the CSS-selector. The `elem` itself is also included in the search.
 
@@ -201,7 +196,7 @@ For instance:
       alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
     </script>
 
-## <a href="#getelementsby" id="getelementsby" class="main__anchor">getElementsBy*</a>
+## <a href="#getelementsby" id="getelementsby" class="main__anchor">getElementsBy\*</a>
 
 There are also other methods to look for nodes by a tag, class, etc.
 
@@ -209,9 +204,9 @@ Today, they are mostly history, as `querySelector` is more powerful and shorter 
 
 So here we cover them mainly for completeness, while you can still find them in the old scripts.
 
--   `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for “any tags”.
--   `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
--   `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
+- `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for “any tags”.
+- `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
+- `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
 
 For instance:
 
@@ -263,7 +258,7 @@ Another widespread novice mistake is to write:
     // doesn't work
     document.getElementsByTagName('input').value = 5;
 
-That won’t work, because it takes a *collection* of inputs and assigns the value to it rather than to elements inside it.
+That won’t work, because it takes a _collection_ of inputs and assigns the value to it rather than to elements inside it.
 
 We should either iterate over the collection or get an element by its index, and then assign, like this:
 
@@ -292,7 +287,7 @@ Looking for `.article` elements:
 
 ## <a href="#live-collections" id="live-collections" class="main__anchor">Live collections</a>
 
-All methods `"getElementsBy*"` return a *live* collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
+All methods `"getElementsBy*"` return a _live_ collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
 
 In the example below, there are two scripts.
 
@@ -316,7 +311,7 @@ In the example below, there are two scripts.
       alert(divs.length); // 2
     </script>
 
-In contrast, `querySelectorAll` returns a *static* collection. It’s like a fixed array of elements.
+In contrast, `querySelectorAll` returns a _static_ collection. It’s like a fixed array of elements.
 
 If we use it instead, then both scripts output `1`:
 
@@ -349,12 +344,12 @@ By far the most used are `querySelector` and `querySelectorAll`, but `getElement
 
 Besides that:
 
--   There is `elem.matches(css)` to check if `elem` matches the given CSS selector.
--   There is `elem.closest(css)` to look for the nearest ancestor that matches the given CSS-selector. The `elem` itself is also checked.
+- There is `elem.matches(css)` to check if `elem` matches the given CSS selector.
+- There is `elem.closest(css)` to look for the nearest ancestor that matches the given CSS-selector. The `elem` itself is also checked.
 
 And let’s mention one more method here to check for the child-parent relationship, as it’s sometimes useful:
 
--   `elemA.contains(elemB)` returns true if `elemB` is inside `elemA` (a descendant of `elemA`) or when `elemA==elemB`.
+- `elemA.contains(elemB)` returns true if `elemB` is inside `elemA` (a descendant of `elemA`) or when `elemA==elemB`.
 
 ## <a href="#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -423,29 +418,29 @@ Here are some of them:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/document" class="sidebar__link">Document</a>
+- <a href="/document" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
--   <a href="#document-getelementbyid-or-just-id" class="sidebar__link">document.getElementById or just id</a>
--   <a href="#querySelectorAll" class="sidebar__link">querySelectorAll</a>
--   <a href="#querySelector" class="sidebar__link">querySelector</a>
--   <a href="#matches" class="sidebar__link">matches</a>
--   <a href="#closest" class="sidebar__link">closest</a>
--   <a href="#getelementsby" class="sidebar__link">getElementsBy*</a>
--   <a href="#live-collections" class="sidebar__link">Live collections</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#document-getelementbyid-or-just-id" class="sidebar__link">document.getElementById or just id</a>
+- <a href="#querySelectorAll" class="sidebar__link">querySelectorAll</a>
+- <a href="#querySelector" class="sidebar__link">querySelector</a>
+- <a href="#matches" class="sidebar__link">matches</a>
+- <a href="#closest" class="sidebar__link">closest</a>
+- <a href="#getelementsby" class="sidebar__link">getElementsBy\*</a>
+- <a href="#live-collections" class="sidebar__link">Live collections</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (1)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (1)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -453,8 +448,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/04-searching-elements-dom" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>

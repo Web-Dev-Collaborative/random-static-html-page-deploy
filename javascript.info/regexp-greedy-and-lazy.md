@@ -1,14 +1,10 @@
 EN
 
-
 <!-- -->
-
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](https://javascript.info/translate) the content of this tutorial to your language!
-
-
 
 Search
 
@@ -17,7 +13,6 @@ Search
 <a href="/tutorial/map" class="map"><span class="map__text">Tutorial map</span></a>
 
 <span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Fregexp-greedy-and-lazy" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Fregexp-greedy-and-lazy" class="share share_fb"></a>
-
 
 1.  <a href="/" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
 2.  <span id="breadcrumb-1"><a href="/regular-expressions" class="breadcrumbs__link"><span>Regular expressions</span></a></span>
@@ -62,9 +57,9 @@ That can be described as “greediness is the cause of all evil”.
 
 To find a match, the regular expression engine uses the following algorithm:
 
--   For every position in the string
-    -   Try to match the pattern at that position.
-    -   If there’s no match, go to the next position.
+- For every position in the string
+  - Try to match the pattern at that position.
+  - If there’s no match, go to the next position.
 
 These common words do not make it obvious why the regexp fails, so let’s elaborate how the search works for the pattern `".+"`.
 
@@ -90,7 +85,7 @@ These common words do not make it obvious why the regexp fails, so let’s elabo
 
 4.  Now the engine finished repeating `.+` and tries to find the next character of the pattern. It’s the quote `"`. But there’s a problem: the string has finished, there are no more characters!
 
-    The regular expression engine understands that it took too many `.+` and starts to *backtrack*.
+    The regular expression engine understands that it took too many `.+` and starts to _backtrack_.
 
     In other words, it shortens the match for the quantifier by one character:
 
@@ -128,7 +123,7 @@ The lazy mode of quantifiers is an opposite to the greedy mode. It means: “rep
 
 We can enable it by putting a question mark `'?'` after the quantifier, so that it becomes `*?` or `+?` or even `??` for `'?'`.
 
-To make things clear: usually a question mark `?` is a quantifier by itself (zero or one), but if added *after another quantifier (or even itself)* it gets another meaning – it switches the matching mode from greedy to lazy.
+To make things clear: usually a question mark `?` is a quantifier by itself (zero or one), but if added _after another quantifier (or even itself)_ it gets another meaning – it switches the matching mode from greedy to lazy.
 
 The regexp `/".+?"/g` works as intended: it finds `"witch"` and `"broom"`:
 
@@ -439,25 +434,25 @@ The solution is `<[^<>]+>`.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="/tutorial/map" class="map"></a>
 
 #### Chapter
 
--   <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
+- <a href="/regular-expressions" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
--   <a href="#greedy-search" class="sidebar__link">Greedy search</a>
--   <a href="#lazy-mode" class="sidebar__link">Lazy mode</a>
--   <a href="#alternative-approach" class="sidebar__link">Alternative approach</a>
--   <a href="#summary" class="sidebar__link">Summary</a>
+- <a href="#greedy-search" class="sidebar__link">Greedy search</a>
+- <a href="#lazy-mode" class="sidebar__link">Lazy mode</a>
+- <a href="#alternative-approach" class="sidebar__link">Alternative approach</a>
+- <a href="#summary" class="sidebar__link">Summary</a>
 
--   <a href="#tasks" class="sidebar__link">Tasks (3)</a>
--   <a href="#comments" class="sidebar__link">Comments</a>
+- <a href="#tasks" class="sidebar__link">Tasks (3)</a>
+- <a href="#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -465,8 +460,8 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/10-regexp-greedy-and-lazy" class="sidebar__link">Edit on GitHub</a>
 
--   © 2007—2021  Ilya Kantor
--   <a href="/about" class="page-footer__link">about the project</a>
--   <a href="/about#contact-us" class="page-footer__link">contact us</a>
--   <a href="/terms" class="page-footer__link">terms of usage</a>
--   <a href="/privacy" class="page-footer__link">privacy policy</a>
+- © 2007—2021  Ilya Kantor
+- <a href="/about" class="page-footer__link">about the project</a>
+- <a href="/about#contact-us" class="page-footer__link">contact us</a>
+- <a href="/terms" class="page-footer__link">terms of usage</a>
+- <a href="/privacy" class="page-footer__link">privacy policy</a>
