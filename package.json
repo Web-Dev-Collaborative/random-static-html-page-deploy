@@ -1,0 +1,19 @@
+{
+  "name": "random-static-html-page-deploy",
+  "version": "1.0.0",
+  "description": "![preview](https://github.com/bgoonz/random-static-html-page-deploy/blob/master/static.png?raw=true)",
+  "main": "ds-viz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Dev-Collaborative/random-static-html-page-deploy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-Dev-Collaborative/random-static-html-page-deploy/issues"
+  },
+  "homepage": "https://github.com/Web-Dev-Collaborative/random-static-html-page-deploy#readme"
+}
